@@ -7,5 +7,27 @@
     --footer-namber:rgba(255, 255, 255, 0.60);
     --footr-backround:#2F303A;
     --team-backround:#F5F4FA;
- 
+    accent-color: #2196F3;;
+
+    /* font-family: "Roboto", sans-serif; */
+    /* font-family: "Releway", sans-serif; */
 }   
+.nav-link{
+    color: #212121;
+    font-family: "Roboto", sans-serif;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1,14;
+    letter-spacing: 0.28px;
+}
+
+
+.active {
+    color: var(--accent-color)
+}
+
+.nav-link:hover,
+.nav-link:focus {
+color:var(--accent-color)
+}
