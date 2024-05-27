@@ -7,8 +7,7 @@
     --footer-namber:rgba(255, 255, 255, 0.60);
     --footr-backround:#2F303A;
     --team-backround:#F5F4FA;
-    accent-color: #2196F3;;
-
+}
 
     a {
         text-decoration: none;
@@ -28,18 +27,46 @@
         display: block;
     }
 
+    body {
+
+        font-family: "Roboto", sans-serif;
+       
+       };
+
     /* font-family: "Roboto", sans-serif; */
     /* font-family: "Releway", sans-serif; */
-}   
-.nav-link{
-    color: #212121;
-    font-family: "Roboto", sans-serif;
-    font-family: Roboto;
+.header {
+    background-color: var(--accent-color);
+}
+
+.header-logo {
+    color: var(--logo-color);
+    font-family: "Releway", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.38;
+        letter-spacing: 0.78px;
+}
+
+.header-span {
+    color: var(--accent-color);
+        font-family: "Releway", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.38;
+        letter-spacing: 0.78px;
+}
+
+
+.nav-link {
+    color:var(--text-color);
     font-size: 14px;
     font-weight: 500;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.28px;
 }
+
+
 
 
 .active {
@@ -49,4 +76,154 @@
 .nav-link:hover,
 .nav-link:focus {
 color:var(--accent-color)
+}
+
+.header-link {
+    color:var(--addtext-color);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.header-link:hover,
+.header-link:focus {
+color:var(--accent-color)
+}
+
+.hero {
+    background-color: var(--footr-backround);
+}
+.hero-title {
+    color:var(--title-color);
+text-align: center;
+font-size: 44px;;
+font-weight: 900;
+line-height: 1.36; /* 136.364% */
+letter-spacing: 2.64px;
+text-transform: uppercase;
+}
+.hero-button {
+    color: #FFF;
+background-color: var(--accent-color);
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.87; /* 187.5% */
+letter-spacing: 0.96px;
+}
+
+.skills-title {
+    color:var(--text-color);
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
+.skills-desc {
+    color:var(--addtext-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+.work-title {
+    color:var(--text-color);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: 1.08px;
+}
+.team {
+    background-color: var(--team-backround);
+}
+.team-tittle {
+    color:var(--text-color);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: 1.08px
+}
+.team-caption {
+    color: var(--text-color);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.18;
+letter-spacing: 0.48px;
+}
+.team-desc {
+    color: var(--addtext-color);
+text-align: center;
+font-size: 16px;;
+font-weight: 400;
+line-height: 1.18;
+letter-spacing: 0.48px;
+}
+.footer {
+    background-color: var(--footr-backround);
+}
+.footer-link {
+    color: var(--title-color);
+font-family: "Raleway";
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+.footer-span {
+    color:var(--accent-color);
+font-family: "Raleway";
+font-size: 26px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
+}
+.address-link {
+    color:var(--title-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+.footer-nummber {
+    color: var(--footer-namber);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+/* сторінка портфоліо */
+
+
+.button-btn {
+    color: var(--text-color);
+text-align: center;
+font-size: 16px;;
+font-weight: 500;
+line-height: 1.62; /* 162.5% */
+letter-spacing: 0.48px;
+}
+.button-btn:hover,
+.buttun-btn:focus {
+    color:var(--title-color);
+    background-color: var(--accent-color);
+}
+.card-title {
+    color:var(--text-color);
+font-size: 18px;
+font-weight: 700;
+line-height: 2; /* 200% */
+letter-spacing: 1.08px;
+}
+.card-desc {
+    color: var(--addtext-color);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.87; /* 187.5% */
+letter-spacing: 0.48px;
 }
