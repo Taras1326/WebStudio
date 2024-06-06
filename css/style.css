@@ -36,7 +36,7 @@ body {
 }
 
 .container {
-  /* outline: solid red; */
+  outline: solid red;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -47,6 +47,8 @@ body {
 /* font-family: "Roboto", sans-serif; */
 /* font-family: "Releway", sans-serif; */
 
+
+
 .header-logo {
   color: var(--logo-color);
   font-family: "Releway", sans-serif;
@@ -54,6 +56,7 @@ body {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
+  margin-right: 93px;
 }
 
 .header-span {
@@ -63,6 +66,16 @@ body {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.header-list {
+    display: flex;
+    gap: 50px
 }
 
 .nav-link {
@@ -87,6 +100,15 @@ body {
     padding-bottom: 25px;
 }
 
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    margin-right: auto;
+}
+
 .header-link {
   color: var(--addtext-color);
   font-size: 14px;
@@ -104,6 +126,7 @@ body {
   background-color: var(--footr-backround);
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 .hero-title {
   color: var(--title-color);
@@ -113,6 +136,9 @@ body {
   line-height: 1.36; /* 136.364% */
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .hero-button {
   color: #fff;
@@ -122,7 +148,18 @@ body {
   font-weight: 700;
   line-height: 1.87; /* 187.5% */
   letter-spacing: 0.96px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
+    border-radius: 4px;
 }
+
+.skills-list {
+    display: flex;
+    gap: 30px;
+}
+
 
 .skills {
     padding-top: 94px;
@@ -135,6 +172,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .skills-desc {
@@ -149,6 +187,11 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+.work-list {
+    display: flex;
+    gap: 30px;
+}
 .work-title {
   color: var(--text-color);
   text-align: center;
@@ -156,11 +199,19 @@ body {
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
+ margin-bottom: 50px;
 }
 .team {
   background-color: var(--team-backround);
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+
+
+.team-list {
+    display: flex;
+    gap: 30px;
 }
 .team-tittle {
   color: var(--text-color);
@@ -169,6 +220,16 @@ body {
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.team-img {
+    width: 270px;
+}
+.team-box {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .team-caption {
   color: var(--text-color);
@@ -177,7 +238,9 @@ body {
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.48px;
+  margin-bottom: 10px;
 }
+
 .team-desc {
   color: var(--addtext-color);
   text-align: center;
@@ -186,11 +249,14 @@ body {
   line-height: 1.18;
   letter-spacing: 0.48px;
 }
+
+
 .footer {
   background-color: var(--footr-backround);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 
 .footer-link {
   color: var(--title-color);
@@ -199,6 +265,7 @@ body {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
+    margin-bottom: 20px;
 }
 .footer-span {
   color: var(--accent-color);
@@ -215,6 +282,19 @@ body {
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
 }
+.footer-list {
+    margin-top: 9px;
+}
+
+.footer-item {
+    margin-bottom: 9px;
+}
+
+.footer-item:last-child {
+    margin-bottom: 0px;
+}
+
+
 .footer-nummber {
   color: var(--footer-namber);
   font-size: 14px;
@@ -260,7 +340,4 @@ body {
 
 .skills {
   /* background-color: greenyellow; */
-}
-.team {
-  background-color: var(--team-backround);
 }
