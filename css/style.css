@@ -36,7 +36,6 @@ body {
 }
 
 .container {
-  outline: solid red;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
