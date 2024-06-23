@@ -368,9 +368,14 @@ body {
   letter-spacing: 0.48px;
 }
 
+.card-item {
+  border: 1px solid #EEE;
+flex-basis: calc((100% - 60px) / 3)
+}
+
 
 .card-img {
-  width: 370px;
+  width: 100%
 }
 
 .skills {
