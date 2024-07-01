@@ -302,7 +302,7 @@ body {
   
 }
 .footer-address {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .address-link {
   color: var(--title-color);
@@ -354,10 +354,10 @@ body {
   font-weight: 500;
   line-height: 1.62; /* 162.5% */
   letter-spacing: 0.48px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-    padding-right: 32px;
-    padding-left: 32px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
     border-radius: 4px;
   
 }
@@ -385,6 +385,7 @@ body {
   font-weight: 700;
   line-height: 2; /* 200% */
   letter-spacing: 1.08px;
+  padding-bottom: 4px;
 }
 .card-desc {
   color: var(--addtext-color);
