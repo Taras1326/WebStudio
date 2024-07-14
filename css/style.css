@@ -130,6 +130,9 @@ body {
   padding-bottom: 200px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)), url(../imeges/backraund.jpg );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   color: var(--title-color);
