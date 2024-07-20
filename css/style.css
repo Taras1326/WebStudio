@@ -159,6 +159,7 @@ body {
     padding-right: 32px;
     padding-left: 32px;
     border-radius: 4px;
+    border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -262,14 +263,14 @@ body {
 }
 
 .team-item {
-
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
-.team-item:hover {
+/* .team-item:hover {
  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 
-}
+} */
 
 
 .team-img {
