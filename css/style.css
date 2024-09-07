@@ -303,7 +303,7 @@ background: rgba(47, 48, 58, 0.80); */
   color: #fff;
   /* opacity: 0.3; */
   background-color: transparent;
-  background-color: rgba(47, 48, 58, 0.8); 
+  background-color: rgba(47, 48, 58, 0.8);
 }
 .team {
   background-color: var(--team-backround);
@@ -385,16 +385,18 @@ background: rgba(47, 48, 58, 0.80); */
   margin-top: 16px;
   padding: 12px;
 }
+
 .social-link:hover {
-  
+  fill: var(--title-color);
   transform: none;
   background-color: #2196f3;;
 }
+
 .icon {
   fill: var(--addtext-color);
 }
 .icon:hover {
-  color: #fff;
+  /* color: #fff; */
   fill: var(--title-color);
 }
 /* .social-link:hover {
@@ -415,10 +417,11 @@ background: rgba(47, 48, 58, 0.80); */
   justify-content: space-between;
 }
 
+
 .logo-client {
   cursor: pointer;
-  border: 1px solid #afb1b8;
-  fill: #afb1b8;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
   margin-top: 50px;
   margin-bottom: 94px;
 }
