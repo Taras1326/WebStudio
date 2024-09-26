@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,10 +41,11 @@
             <svg class="header-icon">
               <use href="./imeges/symbol-defs.svg#envelope"></use>
             </svg>
+          </a>
             <a href="mailto:info@devstudio.com" class="header-link"
               >info@devstudio.com</a
             >
-          </a>
+          
           </li>
           <li class="header-item">
             <svg class="header-smartphone">
@@ -62,7 +63,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- секція переваги  -->
@@ -110,15 +111,21 @@
                 alt="computter"
                 class="work-image"
               />
-              <h3 class="work-transparent">Десктопні додатки</h3>
+              <div class="work-position">
+              <p class="work-transparent">Десктопні додатки</p>
+            </div> 
             </li>
             <li class="work-item">
               <img src="./imeges/tel.jpg" alt="tel" class="work-image" />
-              <h3 class="work-transparent">Мобільні додатки</h3>
+              <div class="work-position">
+              <p class="work-transparent">Мобільні додатки</p> 
+            </div>
             </li>
             <li class="work-item">
               <img src="./imeges/tablet.jpg" alt="tablet" class="work-image" />
-              <h3 class="work-transparent">Дизайнерські рішення</h3>
+              <div class="work-position">
+              <p class="work-transparent">Дизайнерські рішення</p>
+            </div>
             </li>
           </ul>
         </div>
@@ -260,6 +267,7 @@
               >
                 <use href="./imeges/symbol-defs.svg#bild"></use>
               </svg>
+            </a>
             </li>
             <li>
               <svg
@@ -338,84 +346,92 @@
                 >+38 096 111 11 11</a
               >
             </li>
+            <div>
+              <h5  class="footer-groste">приєднуйтесь</h5>
+              <a href="#" class="logo-media-2">
+                <svg width="44" height="44" class="logo-media-1">
+                  <use href="./imeges/symbol-defs.svg#instagram-white"></use>
+                </svg>
+              </a>
+              <a href="#" class="logo-media-2">
+                <svg width="44" height="44" class="logo-media-1">
+                  <use href="./imeges/symbol-defs.svg#twitter-white"></use>
+                </svg>
+              </a>
+              <a href="#" class="logo-media-2">
+                <svg width="44" height="44" class="logo-media-1">
+                  <use href="./imeges/symbol-defs.svg#facebook-white"></use>
+                </svg>
+              </a>
+              <a href="#" class="logo-media-2">
+                <svg width="44" height="44" class="logo-media-1">
+                  <use href="./imeges/symbol-defs.svg#linkedin-white"></use>
+                </svg>
+              </a>
+            </div>
+              <div>
             <li class="footer-list__item">
-              <b class="footer-list__text">присоединяйтесь</b>
-                
-              <ul class="social social--second">
-        
-                  <li class="social__item">
-                    <a class="social__link" href="" aria-label="Instagram link">
-                      <svg class="social__icon">
-                        <use href="./img/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-        
-                  <li class="social__item">
-                    <a class="social__link" href="" aria-label="Twitter link">
-                      <svg class="social__icon">
-                        <use href="./img/sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-        
-                  <li class="social__item">
-                    <a class="social__link" href="" aria-label="Facebook link">
-                      <svg class="social__icon">
-                        <use href="./img/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-        
-                  <li class="social__item">
-                    <a class="social__link" href="" aria-label="LinkedIn link">
-                      <svg class="social__icon">
-                        <use href="./img/sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-              </ul>
-            </li>
-    
-            <li class="footer-list__item">
-    
-              <b class="footer-list__text">Подпишитесь на рассылку</b>
+              <h3 class="footer-list__text">Підпишіться на розсилку</h3>
               <form class="footer__form">
-                <input class="form-input" type="mail" id="email" name="email">
-                <button type="submit" class="btn footer--btn">
-                  Подписаться
-                  <svg class="btn__link-img is--telegram">
+                <input class="form-input" type="email" id="email" placeholder="E-mail">
+                <button type="submit" class="btnfooter--btn">
+                  Підписатися
+                  <!-- <li class="footer-box"> -->
+                    <svg class="footer-teleg">
+                      <use href="./imeges/symbol-defs.svg#telrgram"></use>
+                    </svg>
+                  <!-- <svg class="btn__link-img is--telegram">
                     <use xlink:href="./img/sprite.svg#icon-iconsend"></use>
-                  </svg> 
+                  </svg>  -->
+                <!-- </li> -->
                 </button>
               </form>
-            <!-- <li class="footer-svg">
-              <h5 class="footer-gradient">приєднуйтесь</h5>
-        <a href="#" class="logo-media-2">
-          <svg class="logo-media-1">
-            <use href="./imeges/symbol-defs.svg#instagram-white"></use>
-          </svg>
-        </a>
-        <a href="#" class="logo-media-2">
-          <svg class="logo-media-1">
-            <use href="./imeges/symbol-defs.svg#twitter-white"></use>
-          </svg>
-        </a>
-        <a href="#" class="logo-media-2">
-          <svg class="logo-media-1">
-            <use href="./imeges/symbol-defs.svg#facebook-white"></use>
-          </svg>
-        </a>
-        <a href="#" class="logo-media-2">
-          <svg  class="logo-media-1">
-            <use href="./imeges/symbol-defs.svg#linkedin-white"></use>
-          </svg>
-        </a>
-      </li> -->
+            </div>
           </ul>
         </address>
       </div>
     </footer>
-    <!-- <a href="#id1">&#9954;</a> -->
+      <div class="backdrop backdrop--hidden" data-modal>
+        <div class="modal">
+           <h2 class="form-text">Залиште свої дані, ми вам передзвонимо</h2>
+           <form class="form-exet">
+            <label for="name" class="form-lebel">Ім'я</label>
+            <div class="form-wrapper">
+            <input type="text" id="name" class="form-input-main" required>
+            <svg class="form-icon">
+              <use xlink:href="./imeges/symbol-defs.svg#person-black"></use>
+            </svg>
+          </div>
+            <label for="tel" class="form-lebel">Телефон</label>
+            <div class="form-wrapper">
+            <input type="tel" id="name" class="form-input-main" required>
+            <svg class="form-icon">
+              <use href="./imeges/symbol-defs.svg#phone-black"></use>
+            </svg>
+          </div>
+            <label for="email" class="form-lebel">Пошта</label>
+            <div class="form-wrapper">
+            <input type="email" id="name" class="form-input-main" required>
+            <svg class="form-icon">
+              <use href="./imeges/symbol-defs.svg#email-black"></use>
+            </svg>
+          </div>
+            <label for="text" class="form-list">Коментар</label>
+            <textarea name="text"id="text" placeholder="Введіть текст" class="form-title"></textarea>
+            <label class="form-main">
+              <input type="checkbox" name="" id="" class="form-check">
+              <p class="form-item">Погоджуюся з розсилкою та приймаю</p>
+              <a href="#" class="form-wrap">Умови договору</a>
+            </label>
+            <button type="submit" class="form-button">Відправити</button>
+           </form> 
+           <button type="button" class="button-box" data-modal-close>
+            <svg class="form-close">
+              <use href="./imeges/symbol-defs.svg#close"></use>
+            </svg>
+           </button>
+        </div>
+      </div>
+    <script src="./sctipt.js"></script>
   </body>
 </html>
