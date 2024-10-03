@@ -37,22 +37,19 @@
         </nav>
         <ul class="header-list">
           <li class="header-item">
-            <a href="#" class="header-envelope">
-            <svg class="header-icon">
-              <use href="./imeges/symbol-defs.svg#envelope"></use>
-            </svg>
-          </a>
+
             <a href="mailto:info@devstudio.com" class="header-link"
-              >info@devstudio.com</a
+              ><svg class="header-icon">
+                <use href="./imeges/symbol-defs.svg#envelope"></use>
+              </svg>info@devstudio.com</a
             >
           
           </li>
           <li class="header-item">
-            <svg class="header-smartphone">
-              <use href="./imeges/symbol-defs.svg#smartphone"></use>
-            </svg>
             <a href="tel:+380961111111" class="header-link"
-              >+38 096 111 11 11</a
+              ><svg class="header-smartphone">
+                <use href="./imeges/symbol-defs.svg#smartphone"></use>
+              </svg>+38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -267,7 +264,6 @@
               >
                 <use href="./imeges/symbol-defs.svg#bild"></use>
               </svg>
-            </a>
             </li>
             <li>
               <svg
@@ -325,9 +321,11 @@
     </main>
     <footer class="footer">
       <div class="container">
+        <div class="footer-alain">
         <a href="./index.html" class="footer-link"
           ><span class="footer-span">Web</span>Studio</a
         >
+        
         <address class="footer-address">
           <a
             href="https://www.google.com/maps/dir//%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.4265516,30.4559855,12z/data=!3m1!4b1!4m9!4m8!1m1!4e2!1m5!1m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2m2!1d30.5383858!2d50.4265807?entry=ttu"
@@ -335,6 +333,7 @@
             class="address-link"
             >м. Київ, пр-т Лесі Українки, 26</a
           >
+        </address>
           <ul class="footer-list">
             <li class="footer-item">
               <a href="mailto:info@devstudio.com" class="footer-nummber"
@@ -346,49 +345,46 @@
                 >+38 096 111 11 11</a
               >
             </li>
-            <div>
+          </ul>
+          </div>
+            <div class="footer-container">
               <h5  class="footer-groste">приєднуйтесь</h5>
-              <a href="#" class="logo-media-2">
-                <svg width="44" height="44" class="logo-media-1">
+              <a href="https://www.instagram.com/" class="logo-text">
+                <svg class="logo-box">
                   <use href="./imeges/symbol-defs.svg#instagram-white"></use>
                 </svg>
               </a>
-              <a href="#" class="logo-media-2">
-                <svg width="44" height="44" class="logo-media-1">
+              <a href="https://x.com/?lang=ru" class="logo-text">
+                <svg class="logo-box">
                   <use href="./imeges/symbol-defs.svg#twitter-white"></use>
                 </svg>
               </a>
-              <a href="#" class="logo-media-2">
-                <svg width="44" height="44" class="logo-media-1">
+              <a href="https://www.facebook.com/" class="logo-text">
+                <svg class="logo-box">
                   <use href="./imeges/symbol-defs.svg#facebook-white"></use>
                 </svg>
               </a>
-              <a href="#" class="logo-media-2">
-                <svg width="44" height="44" class="logo-media-1">
+              <a href="https://www.invisionapp.com/" class="logo-text">
+                <svg class="logo-box">
                   <use href="./imeges/symbol-defs.svg#linkedin-white"></use>
                 </svg>
               </a>
             </div>
-              <div>
+              <div class="footer-2">
+                <ul>
             <li class="footer-list__item">
               <h3 class="footer-list__text">Підпишіться на розсилку</h3>
               <form class="footer__form">
                 <input class="form-input" type="email" id="email" placeholder="E-mail">
                 <button type="submit" class="btnfooter--btn">
                   Підписатися
-                  <!-- <li class="footer-box"> -->
                     <svg class="footer-teleg">
                       <use href="./imeges/symbol-defs.svg#telrgram"></use>
                     </svg>
-                  <!-- <svg class="btn__link-img is--telegram">
-                    <use xlink:href="./img/sprite.svg#icon-iconsend"></use>
-                  </svg>  -->
-                <!-- </li> -->
                 </button>
               </form>
+            </ul>
             </div>
-          </ul>
-        </address>
       </div>
     </footer>
       <div class="backdrop backdrop--hidden" data-modal>
@@ -404,22 +400,22 @@
           </div>
             <label for="tel" class="form-lebel">Телефон</label>
             <div class="form-wrapper">
-            <input type="tel" id="name" class="form-input-main" required>
+            <input type="tel" id="tel" class="form-input-main" required>
             <svg class="form-icon">
               <use href="./imeges/symbol-defs.svg#phone-black"></use>
             </svg>
           </div>
             <label for="email" class="form-lebel">Пошта</label>
             <div class="form-wrapper">
-            <input type="email" id="name" class="form-input-main" required>
+            <input type="email" id="E-mail" class="form-input-main" required>
             <svg class="form-icon">
               <use href="./imeges/symbol-defs.svg#email-black"></use>
             </svg>
           </div>
             <label for="text" class="form-list">Коментар</label>
-            <textarea name="text"id="text" placeholder="Введіть текст" class="form-title"></textarea>
+            <textarea name="text" id="text" placeholder="Введіть текст" class="form-title"></textarea>
             <label class="form-main">
-              <input type="checkbox" name="" id="" class="form-check">
+              <input type="checkbox" name="checkbox" id="checkbox" class="form-check" required>
               <p class="form-item">Погоджуюся з розсилкою та приймаю</p>
               <a href="#" class="form-wrap">Умови договору</a>
             </label>
