@@ -1167,6 +1167,7 @@ flex-shrink: 0;
 background: #188CE8;
 margin-left: 124px;
 margin-right: 124px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .button-box {
@@ -1182,7 +1183,6 @@ flex-shrink: 0;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.10);
   background-color: white;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 
