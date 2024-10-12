@@ -880,6 +880,7 @@ flex-basis: calc((100% - 60px) / 3)
 
 .card-bank {
   position: relative;
+  overflow: hidden;
 }
 
 .card-item:hover {
@@ -914,9 +915,22 @@ letter-spacing: 0.54px;
 background: rgba(33, 150, 243, 0.90);
 padding: 63px 24px;
 opacity: 0;
-
+transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.card-item:not(:hover) .card-menu  {
+  transform: translateY(100);
+  opacity: 1;
+}
+
+.card-item:hover .card-menu {
+  transform: translateY(0); /* Поднимаем текст вверх при наведении */
+  opacity: 1;
+}
 
 
 
