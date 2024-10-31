@@ -19,26 +19,42 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/nights-theme.css">
   </head>
-  <body>
+  <body class="night-theme">
     <div class="arrow-up"> 
       <a href="#"><img class="img-hoh" src="./imeges/keybord.png" alt="keybord"></a>
     </div>
     <header>
-    <header id="header" class="header">
+    <header id="header" class="header night-theme">
       <div class="container box">
         <a href="./index.html" class="header-logo" ><span class="header-span">Web</span>Studio</a>   
         <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link active">Студія</a>
+              <a href="./index.html" class="nav-link active lang" key="Studio">Студія</a>
             </li>
             <li class="nav-item">
-              <a href="./pages/portfolio.html" class="nav-link">Портфоліо</a>
+              <a href="./pages/portfolio.html" class="nav-link lang" key="Portfolio">Портфоліо</a>
             </li>
-            <li class="nav-item"><a href="#contacts" class="nav-link">Контакти</a></li>
+            <li class="nav-item"><a href="#contacts" class="nav-link lang" key="Contacts">Контакти</a>
+            </li>
           </ul>
         </nav>
+      </ul>
+      <ul class="header-transitions"> 
+        <li class="header-mains-lang-eng">
+          <button id="en" class="translate"></button>
+          <img class="header-img" src="./imeges/english.png" alt="english">
+        </li>
+        <li class="header-mains-lang-ukr">
+          <button id="ua" class="translate"></button>
+          <img class="header-img" src="./imeges/ukraine.png" alt="ukraine">
+        </li>
+      </ul>
+        <div class="wrapper" id="night-theme-btn">
+          <input type="checkbox" name="checkbox" class="switch">
+          </div>
         <ul class="header-list">
           <li class="header-item">
 
@@ -56,7 +72,7 @@
               </svg>+38 096 111 11 11</a
             >
           </li>
-        </ul>
+       
       </div>
     </header>
     <main>
@@ -410,6 +426,12 @@
       <div class="backdrop backdrop--hidden" data-modal>
         <div class="modal">
            <h2 class="form-text">Залиште свої дані, ми вам передзвонимо</h2>
+           <!-- <div class="form-control">
+            <input type="value" required="">
+            <label>
+                <span style="transition-delay:0ms">U</span><span style="transition-delay:50ms">s</span><span style="transition-delay:100ms">e</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">n</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">m</span><span style="transition-delay:350ms">e</span>
+            </label>
+        </div> -->
            <form class="form-exet">
             <label for="name" class="form-lebel">Ім'я</label>
             <div class="form-wrapper">
@@ -447,8 +469,19 @@
             </svg>
            </button>
         </div>
-      
       </div>
+      <!-- <button class="night-theme-btn" id="night-theme-btn">
+        <svg class="night-theme-btn__icon night-theme-btn__icon_sun">
+          <use href="./imeges/symbol-defs.svg#sun"></use>
+        </svg>
+        <svg class="night-theme-btn__icon night-theme-btn__icon_moon">
+          <use href="./imeges/symbol-defs.svg#moon"></use>
+        </svg>
+
+      </button> -->
+
+      <script src="./lang.js"></script>
+      <script src="./night-theme.js"></script>
       <script src="./scroll.js"></script>
       <script src="./main.js"></script>
     <script src="./sctipt.js"></script>

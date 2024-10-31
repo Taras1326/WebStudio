@@ -18,12 +18,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/nights-theme.css">
   </head>
-  <body>
+  <body class="night-theme">
     <div class="arrow-up"> 
       <a href="#"><img class="img-hoh" src="../imeges/keybord.png" alt="keybord"></a>
     </div>
-    <header class="header">
+    <header class="header night-theme">
       <div class="container box">
         <a href="../index.html" class="header-logo"><span class="header-span">Web</span>Studio</a
         >
@@ -35,9 +36,13 @@
             <li class="nav-item">
               <a href="../pages/portfolio.html" class="nav-link active">Портфоліо</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">Контакти</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Контакти</a>
+            </li>
           </ul>
         </nav>
+        <div class="wrapper" id="night-theme-btn">
+          <input type="checkbox" name="checkbox" class="switch">
+          </div>
         <ul class="header-list">
           <li class="header-item">
             <a href="mailto:info@devstudio.com" class="header-link"
@@ -53,6 +58,7 @@
               </svg>+38 096 111 11 11</a
             >
           </li>
+          
         </ul>
       </div>
     </header>
@@ -262,6 +268,16 @@
         </address>
       </div>
     </footer>
+    <!-- <button class="night-theme-btn" id="night-theme-btn">
+      <svg class="night-theme-btn__icon night-theme-btn__icon_sun" >
+        <use href="../imeges/symbol-defs.svg#sun"></use>
+      </svg>
+      <svg class="night-theme-btn__icon night-theme-btn__icon_moon">
+        <use href="../imeges/symbol-defs.svg#moon"></use>
+      </svg>
+    </button> -->
+
+    <script src="../night-theme.js"></script>
     <script src="../filter.js"></script>
     <script src="../main.js"></script>
     <script src="../sctipt.js"></script>
