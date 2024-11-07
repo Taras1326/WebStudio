@@ -57,28 +57,40 @@ for (let elm of elementss) {
 
 
 
-var arrLang = {
-  'en': {
-      'studio': 'Studio' ,
-      'portfolio': 'Portfolio' ,
-      'contacts': 'Contacts' ,
-  },
-  'ukr': {
-      'studio': 'Студія' ,
-      'portfolio': 'Портфоліо' ,
-      'contacts': 'Контакти'  ,
-  }
-}
+// function ChangeLanguage(){
+//   let hash = window.location.hash;
+//   console.log(hash);
+//   hash = hash.substr(1);
+//   if (!allLang.includes(hash)){
+//       location.href = window.location.pathname + '#ua';
+//       location.reload();
+//   }
+//   select.value = hash;
+//   document.querySelector('.nav-link').innerHTML = langArr['.link'][hash];
+// }
 
-$(function () {
-  $('.translate').click(function() {
-      var lang = $(this).attr('id');
+// var arrLang = {
+//   'en': {
+//       'studio': 'Studio' ,
+//       'portfolio': 'Portfolio' ,
+//       'contacts': 'Contacts' ,
+//   },
+//   'ua': {
+//       'studio': 'Студія' ,
+//       'portfolio': 'Портфоліо' ,
+//       'contacts': 'Контакти'  ,
+//   }
+// }
 
-      $('.lang').each(function(index, mains) {
-          $(this).text(arrLang[lang][$(this).attr('key')]);
-      }); 
-  });
-});
+// $(function () {
+//   $('.translate').click(function() {
+//       var lang = $(this).attr('id');
+
+//       $('.lang').each(function(index, mains) {
+//           $(this).text(arrLang[lang][$(this).attr('key')]);
+//       }); 
+//   });
+// });
 
 
             // themeSwitch

@@ -1,0 +1,55 @@
+
+
+.skills {
+    padding-top: 94px;
+}
+
+
+.skills-list {
+    display: flex;
+    gap: 30px;
+}
+
+.skills-item::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--team-backround);
+    display: block;
+    margin-bottom: 30px;
+    background-image: url(../imeges/antenna\ \(1\).png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skills-item:nth-child(2)::before {
+    background-image: url(../imeges/clock\ 2.png);
+}
+  
+.skills-item:nth-child(3)::before {
+    background-image: url(../imeges/diagram\ 3.png);
+}
+  
+.skills-item:nth-child(4)::before {
+    background-image: url(../imeges/astronaut\ 4.png);
+}
+
+.skills-title {
+    /* color: var(--text-color); */
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+      margin-bottom: 10px;
+}
+
+.skills-desc {
+    color: var(--addtext-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+    letter-spacing: 0.42px;
+  }
+

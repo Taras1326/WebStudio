@@ -1,5 +1,51 @@
+body {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    // padding-top: 85px;
+}
+  
+.cursor {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #11d5f1;
+    animation: move 6s infinite alternate;
+}
+  
+  
+@keyframes move {
+    0% {
+      box-shadow: 0 0 10px 2px #11d5f1;
+    }
+    100% {
+      box-shadow: 0 0 20px 8px #11d5f1;
+    }
+}
 
-
+.arrow-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+  
+.arrow-up .arrow-hoh{
+    width: 50px;
+    height: 50px;
+    background-color: #2196F3;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 3px solid aqua;
+}
+  
+.arrow-up .arrow-hoh:hover {
+    background-color: aqua;
+    color: white;
+    transition: all .5s;
+}
 
 .night-theme-btn {
     position: fixed;
@@ -41,6 +87,7 @@
 
 body {
     transition:  background-color .4s, color .4s;
+    background-color: white;
 }
 
 
