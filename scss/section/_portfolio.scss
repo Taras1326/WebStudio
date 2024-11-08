@@ -5,11 +5,12 @@
     padding-bottom: 94px;
 }
 
-.portfolio-list {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 50px;
-    justify-content: center;
+.portfolio-listen {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap; 
+  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .portfolio-btn {
@@ -50,6 +51,8 @@
     gap: 30px;
     flex-wrap: wrap;
 }
+
+
 
 .portfolio-item {
     transition: transform 0.5s ease;

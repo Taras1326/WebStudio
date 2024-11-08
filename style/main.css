@@ -808,9 +808,10 @@ body.night-theme .night-theme-btn__icon_sun {
   padding-bottom: 94px;
 }
 
-.portfolio-list {
+.portfolio-listen {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   justify-content: center;
 }
