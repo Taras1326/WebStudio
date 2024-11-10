@@ -25,7 +25,7 @@ function onEntry(entry) {
     refs.closeModalBtn.addEventListener('click', toggleModal);
   
     function toggleModal() {
-      refs.modal.classList.toggle('backdrop--hidden');
+      refs.modal.classList.toggle('form__backdrop--hidden');
     }
   })();
 

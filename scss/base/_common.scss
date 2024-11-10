@@ -23,13 +23,12 @@ body {
     }
 }
 
-.arrow-up {
+.arrow__up {
     position: fixed;
     bottom: 30px;
     right: 30px;
-}
-  
-.arrow-up .arrow-hoh{
+
+    &__up &__hoh{
     width: 50px;
     height: 50px;
     background-color: #2196F3;
@@ -40,8 +39,11 @@ body {
     border-radius: 50%;
     border: 3px solid aqua;
 }
+}
   
-.arrow-up .arrow-hoh:hover {
+
+  
+.arrow__up .arrow__hoh:hover {
     background-color: aqua;
     color: white;
     transition: all .5s;
