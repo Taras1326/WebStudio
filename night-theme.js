@@ -8,6 +8,32 @@ nightThemeBtn.addEventListener("click", function() {
 })
 
 
+// let styleMode = localStorage.getItem('styleMode');
+// const styleToggle = document.querySelector('.header__button');
+
+// const enableDarkStyle = () => {
+//   document.body.classList.add('darkstyle');
+//   localStorage.setItem('styleMode', 'dark');
+// };
+
+// const disableDarkStyle = () => {
+//   document.body.classList.remove('darkstyle');
+//   localStorage.setItem('styleMode', 'light');
+// };
+
+// styleToggle.addEventListener('click', () => {
+//   if (styleMode !== 'dark') {
+//     enableDarkStyle();
+//   } else {
+//     disableDarkStyle();
+//   }
+// });
+
+// if (styleMode === 'dark') {
+//   enableDarkStyle();
+// }
+
+
 
 
 
