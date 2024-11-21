@@ -22,15 +22,76 @@
   </head>
   <body class="night__theme">
     <div class="cursor"></div>
-    <div class="arrow__up"> 
+    <!-- <div class="arrow__up"> 
       <a href="#"><img class="arrow__hoh" src="./imeges/keybord.png" alt="keybord"></a>
-    </div>
+    </div> -->
     <header>
     <header id="header" class="header night_theme">
       <div class="container header__box__main element-show">
-        <a href="./index.html" class="header__logo" ><span class="header__span">Web</span>Studio</a>   
+        <a href="./index.html" class="header__logo" ><span class="header__span">Web</span>Studio</a
+          > 
+        <button type="button" class="header__button" aria-expanded="false" aria-controls="menu-container" data-menu-button="">
+          <svg class="header__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="header__use-close" href="./imeges/symbol-defs.svg#close"></use>
+            <use class="header__use-burger" href="./imeges/symbol-defs.svg#menu-burger"></use>
+          </svg>
+        </button>
+
+        <div class="header__menu-m" data-menu="" id="menu-container">
+          <!-- ..... ====навигация сайта ===========... -->
+          <nav class="header__site__nav">
+            <ul class="header__nav__list">
+              <li class="header__nav__item">
+                <a href="./index.html" class="header__nav__link  header__nav__link--current">Студия</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="./pages/portfolio.html" class="header__nav__link">Портфолио</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="" class="header__nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ..... ====навигация сайта end======= ... -->
+
+          <div class="header__connect">
+            <!-- .....почта+телефон.==header=.......-->
+            <ul class="header__contacts">
+              <li class="header__contacts__item">
+                <a href="mailto:info@devstudio.com" class="header__contacts__link">
+                  +38 096 111 11 11 
+                </a>
+              </li>
+              <li class="header__contacts__item">
+                <a href="tel:+380961111111" class="header__contacts__link__big">
+                 info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <!-- .....почта+телефон.==header=END...=====.......-->
+            <!-- ======social for header============ -->
+            <ul class="header__menu__list">
+              <li class="header__menu__item">
+                <a href="#" class="header__menu__link">Instagram</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="#" class="header__menu__link">Twitter</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="#" class="header__menu__link">Facebook</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="#" class="header__menu__link">LinkedIn</a>
+              </li>
+            </ul>
+            <!-- ======social for mobile ...end...============ -->
+          </div>
+        </div>
+
+
+
         <nav class="header__nav">
-          <ul class="header__list">
+          <ul class="header__list-main">
             <li class="header__item__main">
               <a href="./index.html" class="header__ref header__active lang" key="Studio">Студія</a>
             </li>
@@ -74,12 +135,11 @@
               </svg>+38 096 111 11 11</a
             >
           </li>
-       
       </div>
     </header>
     <main>
       <!-- секція герой -->
-      <section class="hero">
+      <section class="hero hero__overlay">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
@@ -273,11 +333,12 @@
           </ul>
         </div>
       </section>
+      <!-- секція logo -->
       <section class="logo">
         <div class="container">
           <h2 class="logo__heading">Постійні клієнти</h2>
           <ul class="logo__client-main">
-            <li>
+            <li class="logo__translate">
               <a href="#" class="logo__main">
               <svg
                 width="170"
@@ -289,7 +350,7 @@
               </svg>
             </a>
             </li>
-            <li>
+            <li class="logo__translate">
               <a href="#" class="logo__main">
               <svg
                 width="170"
@@ -301,7 +362,7 @@
               </svg>
             </a>
             </li>
-            <li>
+            <li class="logo__translate">
               <a href="#" class="logo__main">
               <svg
                 width="170"
@@ -313,7 +374,7 @@
               </svg>
             </a>
             </li>
-            <li>
+            <li class="logo__translate">
               <a href="#" class="logo__main">
               <svg
                 width="170"
@@ -325,7 +386,7 @@
               </svg>
             </a>
             </li>
-            <li>
+            <li class="logo__translate">
               <a href="#" class="logo__main">
               <svg
                 width="170"
@@ -337,7 +398,7 @@
               </svg>
             </a>
             </li>
-            <li>
+            <li class="logo__translate">
               <a href="#" class="logo__main">
               <svg
                 width="170"
@@ -353,7 +414,96 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__box">
+          <a href="./index.html" class="logo footer__logo">Web<span class="footer__logo--white">Studio</span></a>
+          <!-- ........адрес компании... -->
+          <address class="adress footer__address">
+            <ul class="footer__adress__list">
+              <li class="footer__adress__item">
+                <a href="#" class="footer__adress__link--street">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="footer__adress__item">
+                <a href="mailto:info@devstudio.com" class="footer__adress__link">info@devstudio.com</a>
+              </li>
+              <li class="footer__adress__item">
+                <a href="tel:+380961111111" class="footer__adress__link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!--........ Присоединяйтесь........... -->
+        <div class="footer__accede">
+          <h3 class="footer__accede__title">приєднуйтесь</h3>
+
+          <ul class="social__list footer__accede__list">
+            <li class="social__item accede__item">
+              <a href="#" class="social__link footer__accede__link">
+                <svg class="social__icon  footer__accede__icon">
+                  <use xlink:href="./imeges/symbol-defs.svg#instagram-white"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item accede__item">
+              <a href="#" class="social__link footer__accede__link">
+                <svg class="social__icon footer__accede__icon">
+                  <use xlink:href="./imeges/symbol-defs.svg#twitter-white"></use></svg></a>
+            </li>
+            <li class="social__item accede__item">
+              <a href="#" class="social__link footer__accede__link">
+                <svg class="social__icon footer__accede__icon">
+                  <use xlink:href="./imeges/symbol-defs.svg#facebook-white"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item accede__item">
+              <a href="#" class="social__link footer__accede__link">
+                <svg class="social__icon footer__accede__icon">
+                  <use xlink:href="./imeges/symbol-defs.svg#linkedin-white"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Присоединяйтесь end-->
+
+        <!--Подписаться-->
+
+        <!-- <div class="subscribe"> -->
+        <form class="footer__subscribe__form">
+          <label for="omail" class="footer__subscribe__label footer__subscribe__title">
+            Підпишіться на розсилку
+          </label>
+          <input type="email" name="mail" id="omail" class="footer__subscribe__input" placeholder="E-mail">
+          <button type="submit" class="btn btn--main footer__subscribe__btn">   
+          Підписатися
+          <svg class="footer__teleg">
+            <use href="./imeges/symbol-defs.svg#telrgram"></use>
+          </svg>
+            <!-- <span class="subscribe__icon"></span> -->
+          </button>
+        </form>
+        <!-- </div> -->
+        <!--Подписаться 00 end-->
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__alain" id="contacts">
         <a href="./index.html" class="footer__link"
@@ -407,9 +557,10 @@
             </ul>
             </div>
               <div class="footer__2">
-            <li class="footer__list__item">
-              <h3 class="footer__main">Підпишіться на розсилку</h3>
+            <ul class="footer__list__item">
               <form class="footer__form">
+              <h3 class="footer__main">Підпишіться на розсилку</h3>
+              
                 <input class="footer__input" type="email" id="email" placeholder="E-mail">
                 <ul class="footer__css">
                 <button type="submit" class="footer__btn">
@@ -422,14 +573,15 @@
               </form>
             </ul>
             </div>
+          </div>
+        </footer> -->
             <!-- <div class="contact__popup popup-contact">
               <h2 class="popup-contact__title">Дякуємо!</h2>
               <div class="popup-contact__text">Найближчим часом наш менеджер звʼяжеться з вами.</div>
               <button class="popup-contact__close" type="button"><span class="sr-only">Закрити</span></button>
             </div> -->
            
-      </div>
-    </footer>
+      
       <div class="form form__backdrop--hidden" data-modal>
         <div class="form__modal">
            <h2 class="form__text">Залиште свої дані, ми вам передзвонимо</h2>
@@ -439,7 +591,7 @@
                 <span style="transition-delay:0ms">U</span><span style="transition-delay:50ms">s</span><span style="transition-delay:100ms">e</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">n</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">m</span><span style="transition-delay:350ms">e</span>
             </label>
         </div> -->
-           <form action="https://api.web3forms.com/submit" method="POST" class="form__exet">
+            <form action="https://api.web3forms.com/submit" method="POST" class="form__exet">
             <input type="hidden" name="access_key" value="f12f7bdc-cb82-4092-b716-08a578db4c2f">
             <label for="name" class="form__lebel">Ім'я</label>
             <div class="form__wrapper">
@@ -461,7 +613,6 @@
             <svg class="form__icon">
               <use href="./imeges/symbol-defs.svg#email-black"></use>
             </svg>
-            <!-- <img class="form__img" src="./imeges/eye-close.png" alt="eye-close"> -->
           </div>
             <label for="text" class="form__list">Коментар</label>
             <textarea name="text" id="text" placeholder="Введіть текст" class="form__title"></textarea>
@@ -478,7 +629,7 @@
             </svg>
            </button>
         </div>
-      </div>
+      </div> 
       <!-- <button class="night-theme-btn" id="night-theme-btn">
         <svg class="night-theme-btn__icon night-theme-btn__icon_sun">
           <use href="./imeges/symbol-defs.svg#sun"></use>
@@ -489,12 +640,13 @@
 
       </button> -->
 
-      <script src="./text.js"></script>
-      <script src="./cursor.js"></script>
-      <script src="./lang.js"></script>
-      <script src="./night-theme.js"></script>
-      <script src="./scroll.js"></script>
-      <script src="./main.js"></script>
-    <script src="./sctipt.js"></script>
+      <script src="./js/burger.js"></script>
+      <script src="./js/modal-there is no-scrol .js"></script>
+      <script src="./js/text.js"></script>
+      <script src="./js/cursor.js"></script>
+      <script src="./js/lang.js"></script>
+      <script src="./js/night-theme.js"></script>
+      <script src="./js/main.js"></script>
+    <script src="./js/sctipt.js"></script>
   </body>
 </html>

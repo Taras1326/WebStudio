@@ -1,12 +1,26 @@
 .container {
-    /* outline: solid red; */
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+     outline: solid red; 
+    max-width: 1200px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    // opacity: 0;
+    // transition: opacity 0.5s ease-in-out;
+
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      // height: 5457px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   
   }
   
@@ -14,3 +28,4 @@
     opacity: 1;
     transition: opacity 0.4s;
   }
+

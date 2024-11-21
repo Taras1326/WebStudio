@@ -21,15 +21,77 @@
   </head>
   <body class="night__theme">
     <div class="cursor"></div>
-    <div class="arrow__up"> 
+    <!-- <div class="arrow__up"> 
       <a href="#"><img class="arrow__hoh" src="../imeges/keybord.png" alt="keybord"></a>
-    </div>
+    </div> -->
     <header class="header night-theme">
       <div class="container header__box__main element-show">
         <a href="../index.html" class="header__logo"><span class="header__span">Web</span>Studio</a
         >
+    
+            <button type="button" class="header__button" aria-expanded="false" aria-controls="menu-container" data-menu-button="">
+              <svg class="header__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="header__use-close" href="../imeges/symbol-defs.svg#close"></use>
+                <use class="header__use-burger" href="../imeges/symbol-defs.svg#menu-burger"></use>
+              </svg>
+            </button>
+    
+            <div class="header__menu-m" data-menu="" id="menu-container">
+              <!-- ..... ====навигация сайта ===========... -->
+              <nav class="header__site__nav">
+                <ul class="header__nav__list">
+                  <li class="header__nav__item">
+                    <a href="../index.html" class="header__nav__link  header__nav__link--current">Студия</a>
+                  </li>
+                  <li class="header__nav__item">
+                    <a href="./pages/portfolio.html" class="header__nav__link">Портфолио</a>
+                  </li>
+                  <li class="header__nav__item">
+                    <a href="" class="header__nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- ..... ====навигация сайта end======= ... -->
+    
+              <div class="header__connect">
+                <!-- .....почта+телефон.==header=.......-->
+                <ul class="header__contacts">
+                  <li class="header__contacts__item">
+                    <a href="mailto:info@devstudio.com" class="header__contacts__link">
+                      +38 096 111 11 11 
+                    </a>
+                  </li>
+                  <li class="header__contacts__item">
+                    <a href="tel:+380961111111" class="header__contacts__link__big">
+                     info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+                <!-- .....почта+телефон.==header=END...=====.......-->
+                <!-- ======social for header============ -->
+                <ul class="header__menu__list">
+                  <li class="header__menu__item">
+                    <a href="#" class="header__menu__link">Instagram</a>
+                  </li>
+                  <li class="header__menu__item">
+                    <a href="#" class="header__menu__link">Twitter</a>
+                  </li>
+                  <li class="header__menu__item">
+                    <a href="#" class="header__menu__link">Facebook</a>
+                  </li>
+                  <li class="header__menu__item">
+                    <a href="#" class="header__menu__link">LinkedIn</a>
+                  </li>
+                </ul>
+                <!-- ======social for mobile ...end...============ -->
+              </div>
+            </div>
+    
+
+
+
         <nav class="header__nav">
-          <ul class="header__list">
+          <ul class="header__list-main">
             <li class="header__item__main">
               <a href="../index.html" class="header__ref">Студія</a>
             </li>
@@ -66,24 +128,26 @@
       <section class="portfolio ">
         <div class="container">
           <ul class="portfolio__listen">
-            <li class="button__item">
+            <li class="portfolio__button__item">
+              
               <button type="button" data-filter="all" class="portfolio__btn filter__btn">Усі</button>
             </li>
-            <li class="button__item">
+            <li class="portfolio__button__item">
               <button type="button" data-filter="Web" class="portfolio__btn filter__btn">Веб-сайти</button>
             </li>
-            <li class="button__item">
+            <li class="portfolio__button__item">
               <button type="button" data-filter="apps" class="portfolio__btn filter__btn">Додатки</button>
             </li>
-            <li class="button__item">
+            <li class="portfolio__button__item">
               <button type="button" data-filter="design" class="portfolio__btn filter__btn">Дизайн</button>
             </li> 
-            <li class="button__item">
+            <li class="portfolio__button__item">
               <button type="button" data-filter="Marketing" class="portfolio__btn filter__btn">Маркетинг</button>
             </li>
           </ul>
           <ul class="portfolio__list">
             <li class="project__item portfolio__item Web">
+              <a href="#" class="portfolio__link">
               <div class="portfolio__text">
                 <div class="portfolio__bank">
               <img
@@ -98,8 +162,10 @@
               <p class="portfolio__desc">Веб-сайт</p>
           
         </div>
+      </a>
             </li>
             <li class="project__item portfolio__item design">
+              <a href="#" class="portfolio__link">
               <div class="portfolio__bank">
               <img src="../imeges/poster.jpg" alt="poster" class="portfolio__img" />
               <p class="portfolio__menu">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -109,6 +175,7 @@
               <p class="portfolio__desc">Дизайн</p>
            
           </div>
+        </a>
             </li>
             <li class="project__item portfolio__item apps">
               <div class="portfolio__bank">
@@ -199,7 +266,100 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__box">
+          <a href="../index.html" class="logo footer__logo">Web<span class="footer__logo--white">Studio</span></a>
+          <!-- ........адрес компании... -->
+          <address class="adress footer__address">
+            <ul class="footer__adress__list">
+              <li class="footer__adress__item">
+                <a href="#" class="footer__adress__link--street">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="footer__adress__item">
+                <a href="mailto:info@devstudio.com" class="footer__adress__link">info@devstudio.com</a>
+              </li>
+              <li class="footer__adress__item">
+                <a href="tel:+380961111111" class="footer__adress__link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!--........ Присоединяйтесь........... -->
+        <div class="footer__accede">
+          <h3 class="footer__accede__title">приєднуйтесь</h3>
+
+          <ul class="social__list footer__accede__list">
+            <li class="social__item accede__item">
+              <a href="#" class="social__link footer__accede__link">
+                <svg class="social__icon  footer__accede__icon">
+                  <use xlink:href="../imeges/symbol-defs.svg#instagram-white"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item accede__item">
+              <a href="#" class="social__link footer__accede__link">
+                <svg class="social__icon footer__accede__icon">
+                  <use xlink:href="../imeges/symbol-defs.svg#twitter-white"></use></svg></a>
+            </li>
+            <li class="social__item accede__item">
+              <a href="#" class="social__link footer__accede__link">
+                <svg class="social__icon footer__accede__icon">
+                  <use xlink:href="../imeges/symbol-defs.svg#facebook-white"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item accede__item">
+              <a href="#" class="social__link footer__accede__link">
+                <svg class="social__icon footer__accede__icon">
+                  <use xlink:href="../imeges/symbol-defs.svg#linkedin-white"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Присоединяйтесь end-->
+
+        <!--Подписаться-->
+
+        <!-- <div class="subscribe"> -->
+        <form class="footer__subscribe__form">
+          <label for="omail" class="footer__subscribe__label footer__subscribe__title">
+            Підпишіться на розсилку
+          </label>
+          <input type="email" name="mail" id="omail" class="footer__subscribe__input" placeholder="E-mail">
+          <button type="submit" class="btn btn--main footer__subscribe__btn">   
+          Підписатися
+          <svg class="footer__teleg">
+            <use href="../imeges/symbol-defs.svg#telrgram"></use>
+          </svg>
+            <!-- <span class="subscribe__icon"></span> -->
+          </button>
+        </form>
+        <!-- </div> -->
+        <!--Подписаться 00 end-->
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__alain" id="contacts">
         <a href="../index.html" class="footer__link"
@@ -269,7 +429,7 @@
             </ul>
             </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- <button class="night-theme-btn" id="night-theme-btn">
       <svg class="night-theme-btn__icon night-theme-btn__icon_sun" >
         <use href="../imeges/symbol-defs.svg#sun"></use>
@@ -279,10 +439,13 @@
       </svg>
     </button> -->
 
-    <script src="../cursor.js"></script>
-    <script src="../night-theme.js"></script>
-    <script src="../filter.js"></script>
-    <script src="../main.js"></script>
-    <script src="../sctipt.js"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/text.js"></script>
+    <script src="../js/filter.js"></script>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/lang.js"></script>
+    <script src="../js/night-theme.js"></script>
+    <script src="../js/main.js"></script>
+  <script src="../js/sctipt.js"></script>
   </body>
 </html>
