@@ -25,7 +25,7 @@
     background-color: $team-backround;
     display: block;
     margin-bottom: 30px;
-    background-image: url(/imeges/antenna\ \(1\).png);
+    background-image: url(../imeges/antenna\ \(1\).png);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -41,15 +41,15 @@
   }
 
   &__item:nth-child(2)::before {
-    background-image: url(/imeges/clock\ 2.png);
+    background-image: url(../imeges/clock\ 2.png);
   }
 
   &__item:nth-child(3)::before {
-    background-image: url(/imeges/diagram\ 3.png);
+    background-image: url(../imeges/diagram\ 3.png);
   }
 
   &__item:nth-child(4)::before {
-    background-image: url(/imeges/astronaut\ 4.png);
+    background-image: url(../imeges/astronaut\ 4.png);
   }
 
 

@@ -347,11 +347,11 @@ body.night-theme .night-theme-btn__icon_sun {
 .header__nav__link:hover, .header__nav__link:focus {
   color: #2196f3;
 }
-.header__nav__link::after, .header__nav__link::before {
-  color: #2196f3;
-}
 .header__nav__link--current {
   color: #212121;
+}
+.header__nav__link--current:hover, .header__nav__link--current:focus {
+  color: #2196f3;
 }
 .header__nav__link--current::after {
   content: "";
@@ -727,7 +727,7 @@ body.night-theme .night-theme-btn__icon_sun {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/baxkground-tel.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/baxkground-tel.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -741,7 +741,7 @@ body.night-theme .night-theme-btn__icon_sun {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/backraund.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/backraund.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -755,7 +755,7 @@ body.night-theme .night-theme-btn__icon_sun {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/Ipad.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/Ipad.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -859,7 +859,7 @@ body.night-theme .night-theme-btn__icon_sun {
   background-color: #f5f4fa;
   display: block;
   margin-bottom: 30px;
-  background-image: url(/imeges/antenna\ \(1\).png);
+  background-image: url(../imeges/antenna\ \(1\).png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -879,13 +879,13 @@ body.night-theme .night-theme-btn__icon_sun {
   }
 }
 .skills__item:nth-child(2)::before {
-  background-image: url(/imeges/clock\ 2.png);
+  background-image: url(../imeges/clock\ 2.png);
 }
 .skills__item:nth-child(3)::before {
-  background-image: url(/imeges/diagram\ 3.png);
+  background-image: url(../imeges/diagram\ 3.png);
 }
 .skills__item:nth-child(4)::before {
-  background-image: url(/imeges/astronaut\ 4.png);
+  background-image: url(../imeges/astronaut\ 4.png);
 }
 .skills__title {
   /* color: var(--text-color); */

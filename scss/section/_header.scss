@@ -222,13 +222,18 @@
     color: #2196f3;
   }
 
-  &__nav__link::after,
-  &__nav__link::before {
-    color: #2196f3;
-  }
+  // &__nav__link::after,
+  // &__nav__link::before {
+  //   color: #2196f3;
+  // }
 
   &__nav__link--current {
     color: #212121;
+
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
   }
 
   &__nav__link--current::after {
