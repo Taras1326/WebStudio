@@ -1,28 +1,17 @@
 
 
 .hero {
-
-  padding-top: 118px;
-  padding-bottom: 118px;
-  // max-width: 1600px;
-  text-align: center;
   width: 100%;
   // max-width: 1600px;
   background-color: $footr-backround;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)), url(../imeges/baxkground-tel.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)), url(/imeges/backraund.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   overflow: hidden;
-
-  @media screen and (min-width: 1200px) {
-    .hero {
-        padding:200px 0
-    }
-}
   // background-attachment: fixed;
   // height: 100%;
   // background-attachment: fixed;
@@ -188,95 +177,6 @@
     }
     
 }
-
-
-
-
-
-
-
-
-
-.hero__overlay {
-  // margin-left: auto;
-  // margin-right: auto;
-  width: 100%;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../imeges/backraund.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat
-}
-
-@media screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx) {
-  .hero__overlay{
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(/imeges/backraund.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero__overlay {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../imeges/backraund.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat
-  }
-}
-
-@media screen and (min-width: 768px)and (min-device-pixel-ratio: 2),
-screen and (min-width: 768px),screen and (min-width: 768px),
-screen and (min-width: 768px)and (min-resolution: 192dpi),
-screen and (min-width: 768px)and (min-resolution: 2dppx) {
-  .hero__overlay{
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(/imeges/backraund.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__overlay {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../imeges/backraund.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat
-  }
-}
-
-@media screen and (min-width: 1200px)and (min-device-pixel-ratio: 2),screen and (min-width: 1200px),screen and (min-width: 1200px),screen and (min-width: 1200px)and (min-resolution: 192dpi),screen and (min-width: 1200px)and (min-resolution: 2dppx) {
-  .hero__overlay {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(/imeges/backraund.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
