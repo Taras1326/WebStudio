@@ -70,6 +70,12 @@ body {
   border-radius: 50%;
   background-color: #11d5f1;
   animation: move 6s infinite alternate;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .cursor {
+    display: block;
+  }
 }
 
 @keyframes move {
@@ -1204,6 +1210,7 @@ body.night-theme .night-theme-btn__icon_sun {
 }
 
 .portfolio {
+  padding-top: 60px;
   padding-bottom: 60px;
   justify-content: center;
   align-items: center;
