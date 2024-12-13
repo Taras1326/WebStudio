@@ -119,18 +119,6 @@
           </ul>
         </nav>
       </ul>
-      <!-- <ul class="header-transitions"> 
-        <li class="header-mains-lang-eng">
-          <button id="en" class="translate">
-          <img class="header-img" src="./imeges/english.png" alt="english">
-        </button>
-        </li>
-        <li class="header-mains-lang-ukr">
-          <button id="ua" class="translate">
-          <img class="header-img" src="./imeges/ukraine.png" alt="ukraine">
-        </button>
-        </li>
-      </ul> -->
         <div class="header__wrapper" id="night-theme-btn">
           <input type="checkbox" name="checkbox" class="header__switch">
           </div>
@@ -201,6 +189,8 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
+              <picture>
+                <source srcset="./imeges/desktop/work/work-desktop-@1x.webp 1x, ./imeges/desktop/work/work-desktop-@2x.webp 2x" media="(min-width: 1200px)">
               <img
                 src="./imeges/computter.jpg"
                 alt="computter"
@@ -212,13 +202,19 @@
             </div> 
             </li>
             <li class="work__item">
+              <picture>
+                <source srcset="./imeges/desktop/work/work-mobile-desktop@1x.webp 1x, ./imeges/desktop/work/work-mobile-desktop@2x.webp 2x" media="(min-width: 1200px)">
               <img src="./imeges/tel.jpg" alt="tel" class="work__image" />
+            </picture>
               <div class="work__position">
               <p class="work__transparent">Мобільні додатки</p> 
             </div>
             </li>
             <li class="work__item">
+            <picture>
+              <source src="./imeges/desktop/work/work-designer-desktop@1x.webp 1x, ./imeges/desktop/work/work-designer-desktop@2x.webp 2x" media="(min-width: 1200px)">
               <img src="./imeges/tablet.jpg" alt="tablet" class="work__image" />
+            </picture>
               <div class="work__position">
               <p class="work__transparent">Дизайнерські рішення</p>
             </div>
@@ -233,8 +229,8 @@
           <ul class="team__list">
             <li class="team__main">
               <picture>
-                <source src="./imeges/desktop/team/team-igor-desktop@1x.webp 1x, ./imeges/desktop/team/team-igor-desktop@2x.webp 2x" media="(min-width: 1200px)">
-                <source srcset="./imeges/tablet/team-igor-tablet@1x.webp 1x, ./imeges/tablet/team-igor-tablet@2x.webp 2x " media="(min-width: 768px)">
+                <source srcset="./imeges/desktop/team/team-igor-desktop@1x.webp 1x, ./imeges/desktop/team/team-igor-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./imeges/tablet/team-igor-tablet@1x.webp 1x, ./imeges/tablet/team-igor-tablet@2x.webp 2x" media="(min-width: 768px)">
                 <source srcset="./imeges/mobile/team-igor-mobile@1x.webp 1x, ./imeges/mobile/team-igor-mobile@2x.webp 2x" media="(max-width: 767px)">
               <img src="./imeges/igor.jpg" alt="igor" class="team__img" />
             </picture>
@@ -269,7 +265,7 @@
               <picture>
                 <source srcset="./imeges/desktop/team/team-olga-desktop@1x.webp 1x, ./imeges/desktop/team/team-olga-desktop@2x.webp 2x" media="(min-width: 1200px)">
                 <source srcset="./imeges/tablet/team-olga-tablet@1x.webp 1x, ./imeges/tablet/team-olga-tablet@2x.webp 2x" media="(min-width: 768px)">
-                <source src="./imeges/mobile/team-olga-mobile@1x.webp 1x, ./imeges/mobile/team-olga-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <source srcset="./imeges/mobile/team-olga-mobile@1x.webp 1x, ./imeges/mobile/team-olga-mobile@2x.webp 2x" media="(max-width: 767px)">
               <img src="./imeges/olga.jpg" alt="olga" class="team__img" />
             </picture>
               <div class="team__box">
@@ -337,7 +333,7 @@
               <picture>
                 <source srcset="./imeges/desktop/team/team-mihailo-desktop@1x.webp 1x, ./imeges/desktop/team/team-mihailo-desktop@2x.webp 2x" media="(min-width: 1200px)">
                 <source srcset="./imeges/tablet/team-muhailo-tablet@1x.webp 1x, ./imeges/tablet/team-muhailo-tablet@2x.webp 2x" media="(min-width: 768px)">
-                <source src="./imeges/mobile/team-mihailo-mobile@1x.webp 1x, ./imeges/mobile/team-mihailo-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <source srcset="./imeges/mobile/team-mihailo-mobile@1x.webp 1x, ./imeges/mobile/team-mihailo-mobile@2x.webp 2x" media="(max-width: 767px)">
                 <img src="./imeges/mihailo.jpg" alt="mihailo" class="team__img" />
               </picture>
               <div class="team__box">
@@ -542,15 +538,64 @@
       </div>
   </footer>
 
+
+
+
+  <!-- <div class="backdrop is-hidden"  data-modal>
+    <div class="backdrop__modal ">
+      <h2 class="backdrop__title">Залиште свої дані, ми вам передзвонимо</h2>
+      <form  action="https://api.web3forms.com/submit" method="POST" class="backdrop__form">
+
+        <input type="hidden" name="access_key" value="ce1201de-7164-4780-86de-73433d9e954b">
+
+        <label for="name" class="backdrop__label">Ім'я</label>
+        <div class="backdrop__wrapper">
+        <input type="text" id="name" class="backdrop__input" required>
+        <svg class="backdrop__icon">
+          <use href="./images/symbol-defs.svg#icon-name"></use>
+        </svg>
+      </div>
+        <label for="tell" class="backdrop__label">Телефон</label>
+        <div class="backdrop__wrapper">
+        <input type="text" id="tell" class="backdrop__input" required>
+        <svg class="backdrop__icon">
+          <use href="./images/symbol-defs.svg#icon-phone"></use>
+        </svg>
+        </div>
+        <label for="email" class="backdrop__label">Пошта</label>
+        <div class="backdrop__wrapper">
+        <input type="email" id="emaill" class="backdrop__input" required>
+        <svg class="backdrop__icon">
+          <use href="./images/symbol-defs.svg#icon-emailblack"></use>
+        </svg>
+        </div>
+        <label for="text" class="backdrop__comment">Коментар</label>
+        <textarea name="text" id="text" placeholder="Введіть текст" class="backdrop__text"></textarea>
+        <label class="backdrop__wrapperr">
+          <input type="checkbox"  class="backdrop__box" required>
+          <span class="backdrop__checked">Погоджуюся з розсилкою та приймаю</span>
+          <a href="https://www.facebook.com/"  target="_blank" class="backdrop__links">Умови договору</a>
+        </label>
+        <div class="ds">
+        <button type="submit" class="backdrop__button">Відправити</button>
+        </div>
+      </form>
+      <button type="button" class="backdrop__closee" data-modal-close>
+        <svg class="backdrop__close">
+          <use href="./images/symbol-defs.svg#icon-burger-svg"></use>
+        </svg>
+      </button>
+    </div>
+  </div> -->
+
+
+
+
+
+
       <div class="form form__backdrop--hidden" data-modal>
         <div class="form__modal">
            <h2 class="form__text">Залиште свої дані, ми вам передзвонимо</h2>
-           <!-- <div class="form-control">
-            <input type="value" required="">
-            <label>
-                <span style="transition-delay:0ms">U</span><span style="transition-delay:50ms">s</span><span style="transition-delay:100ms">e</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">n</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">m</span><span style="transition-delay:350ms">e</span>
-            </label>
-        </div> -->
             <form action="https://api.web3forms.com/submit" method="POST" class="form__exet">
             <input type="hidden" name="access_key" value="f12f7bdc-cb82-4092-b716-08a578db4c2f">
             <label for="name" class="form__lebel">Ім'я</label>
@@ -581,7 +626,9 @@
               <p class="form__item">Погоджуюся з розсилкою та приймаю</p>
               <a href="#" class="form__wrap">Умови договору</a>
             </label>
+            <div class="form__alain-button">
             <button type="submit" class="form__button">Відправити</button>
+          </div>
            </form> 
            <button type="button" class="form__box" data-modal-close>
             <svg class="form__close">
@@ -590,6 +637,8 @@
            </button>
         </div>
       </div> 
+
+
       <!-- <button class="night-theme-btn" id="night-theme-btn">
         <svg class="night-theme-btn__icon night-theme-btn__icon_sun">
           <use href="./imeges/symbol-defs.svg#sun"></use>

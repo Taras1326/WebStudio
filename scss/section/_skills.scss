@@ -24,11 +24,24 @@
     height: 120px;
     border-radius: 4px;
     background-color: $team-backround;
+    animation: floatVertical 4s ease-in-out infinite;
     display: block;
     margin-bottom: 30px;
     background-image: url(../imeges/antenna\ \(1\).png);
     background-repeat: no-repeat;
     background-position: center;
+
+    @keyframes floatVertical {
+      0% {
+          transform: translateY(0);
+      }
+      50% {
+          transform: translateY(-15px); /* Подъем вверх */
+      }
+      100% {
+          transform: translateY(0); /* Возврат вниз */
+      }
+  }
 
     @media screen and (min-width: 480px){
       width: 450px;

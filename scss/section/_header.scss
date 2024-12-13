@@ -428,6 +428,9 @@
     line-height: normal;
     letter-spacing: 0.28px;
     text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -554,6 +557,9 @@
     letter-spacing: 0.28px;
     display: flex;
     align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     // @include flex-box ($wrap:nowrap,$direction:start,$justify:start,$align:start);
     gap: 10px;
   }
