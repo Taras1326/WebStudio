@@ -33,8 +33,9 @@
   &__client-main {
     display: flex;
     justify-content: center;
-    gap: 30px;
     flex-wrap: wrap;
+    // @include flex-box ($wrap:nowrap,$direction:start,$align:start);
+    gap: 30px;
     
   }
 
@@ -60,9 +61,10 @@
  
     border-radius: 4px;
     border: 1px solid #afb1b8;
-    // padding: 16px 52px;
+    padding: 16px 52px;
     display: flex;
     justify-content: center;
+    // @include flex-box ($wrap:nowrap,$direction:start);
     align-items: center;
     transition-property: border-color;
     transition-duration: 250ms;

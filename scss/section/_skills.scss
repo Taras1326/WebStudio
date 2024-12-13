@@ -12,9 +12,10 @@
 
   &__list {
     display: flex;
-    gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
+    // @include flex-box ($wrap:nowrap,$direction:start,$align:start);
+    gap: 30px;
   }
 
   &__item::before {

@@ -26,7 +26,8 @@
     }
 
     &__list {
-        display: flex;
+        // display: flex;
+        @include flex-box ($wrap:nowrap,$direction:start,$justify:start,$align:start);
         gap: 30px;
     }
 
@@ -67,9 +68,10 @@
           position: absolute;
           bottom: 0;
           background: rgba(47, 48, 58, 0.80);
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        @include flex-box ($wrap:nowrap,$direction:start,$justify:start);
     }
 
     &__transparent {
