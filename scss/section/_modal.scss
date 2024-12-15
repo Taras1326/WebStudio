@@ -138,6 +138,7 @@
     transition-property: outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    caret-color: #2196f3;
     width: 100%;
     height: 40px;
     flex-shrink: 0;
@@ -332,6 +333,7 @@ text-decoration-line: underline;
     align-items: center;
     justify-content: center;
     transition-duration: 250ms;
+    transition: all .3s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
     @media screen and (min-width: 1200px) {

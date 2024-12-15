@@ -28,6 +28,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.hero__title {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.hero__button {
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -187,8 +197,6 @@ body.night-theme .night-theme-btn__icon_sun {
   border-bottom: 2px solid #ececec;
   background-color: #fff;
   transition: all 0.3s ease-in-out;
-  justify-content: center;
-  align-items: center;
   /* transition: box-shadow .3s ;  */
 }
 @media screen and (min-width: 768px) {
@@ -203,7 +211,10 @@ body.night-theme .night-theme-btn__icon_sun {
 }
 .header > .container {
   display: flex;
+  justify-content: start;
   align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: start;
 }
 .header__box__main {
   position: relative;
@@ -213,7 +224,7 @@ body.night-theme .night-theme-btn__icon_sun {
   /* transition: adding-top .3s,.3s  padding-bottom; */
 }
 .header__logo {
-  color: #000;
+  color: #2196f3;
   font-family: "Releway", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -479,6 +490,12 @@ body.night-theme .night-theme-btn__icon_sun {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
+  background: url(http://i.giphy.com/fsULJFFGv8X3G.gif);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 .header__nav {
   margin-right: auto;
@@ -789,15 +806,18 @@ body.night-theme .night-theme-btn__icon_sun {
 .hero__title {
   color: #ffffff;
   text-align: center;
-  font-size: 26px;
-  font-weight: 900;
   line-height: 1.61; /* 136.364% */
   letter-spacing: 1.56px;
   text-transform: uppercase;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 30px;
-  animation: animate 2s ease-in-out infinite;
+  background: url(https://media.giphy.com/media/3og0IFrHkIglEOg8Ba/giphy.gif?cid=790b7611i9h0rw8pi5b83lh5ugb64gnx121q1ieyu2toyzur&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 @media screen and (min-width: 480px) {
   .hero__title {
@@ -816,8 +836,6 @@ body.night-theme .night-theme-btn__icon_sun {
   color: #ffffff;
   background-color: #2196f3;
   text-align: center;
-  font-size: 16px;
-  font-weight: 700;
   cursor: pointer;
   line-height: 1.87; /* 187.5% */
   letter-spacing: 0.96px;
@@ -967,6 +985,7 @@ body.night-theme .night-theme-btn__icon_sun {
   padding-bottom: 94px;
   text-align: center;
   display: none;
+  padding-top: 85px;
 }
 @media screen and (min-width: 1200px) {
   .work {
@@ -981,7 +1000,12 @@ body.night-theme .night-theme-btn__icon_sun {
   line-height: 1.16;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
-  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 80px cyan;
+  background: url(https://media.giphy.com/media/N2pnVf7TSe1DW/giphy.gif?cid=790b7611y35beygxl5mx8opq7sj289m4hwsdhuqkuhgivnyc&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 .work__list {
   display: flex;
@@ -1044,6 +1068,7 @@ body.night-theme .night-theme-btn__icon_sun {
   }
 }
 .team__main {
+  border: none;
   transition: margin-top 0.4s ease;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   animation: float 3s ease-in-out infinite;
@@ -1077,7 +1102,12 @@ body.night-theme .night-theme-btn__icon_sun {
   line-height: 1.16;
   letter-spacing: 1.08px;
   margin-bottom: 30px;
-  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 80px cyan;
+  background: url(https://media.giphy.com/media/d2Z1YboSiZBSGnJe/giphy.gif?cid=ecf05e47r2uuakezjot2re6uftavt9ff4wxx0k3sc19zqr3g&ep=v1_gifs_related&rid=giphy.gif&ct=g);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 @media screen and (min-width: 1200px) {
   .team__tittle {
@@ -1213,7 +1243,12 @@ body.night-theme .night-theme-btn__icon_sun {
   line-height: 1.18;
   letter-spacing: 0.84px;
   margin-bottom: 30px;
-  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 80px cyan;
+  background: url(https://media.giphy.com/media/3ov9jR7qJvpnO5SW1W/giphy.gif?cid=ecf05e47r2uuakezjot2re6uftavt9ff4wxx0k3sc19zqr3g&ep=v1_gifs_related&rid=giphy.gif&ct=g);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 @media screen and (min-width: 1200px) {
   .logo__heading {
@@ -1530,10 +1565,16 @@ body.night-theme .night-theme-btn__icon_sun {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #2196f3;
 }
 .footer__Web {
   color: #2196f3;
+  background: url(http://i.giphy.com/fsULJFFGv8X3G.gif);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 .footer__link {
   font-size: 14px;
@@ -1842,6 +1883,7 @@ body.night-theme .night-theme-btn__icon_sun {
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  caret-color: #2196f3;
   width: 100%;
   height: 40px;
   flex-shrink: 0;
@@ -1994,6 +2036,7 @@ body.night-theme .night-theme-btn__icon_sun {
   align-items: center;
   justify-content: center;
   transition-duration: 250ms;
+  transition: all 0.3s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {

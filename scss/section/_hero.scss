@@ -69,8 +69,9 @@
   &__title {
     color: $title-color;
     text-align: center;
-    font-size: 26px;
-    font-weight: 900;
+    @extend %font;
+    // font-size: 26px;
+    // font-weight: 900;
     line-height: 1.61; /* 136.364% */
     letter-spacing: 1.56px;
     text-transform: uppercase;
@@ -79,7 +80,12 @@
     margin-bottom: 30px;
     // animation-name: title-move;
     // animation-duration: 2000ms;
-    animation: animate 2s ease-in-out infinite;
+    // animation: animate 2s ease-in-out infinite;
+    background: url(https://media.giphy.com/media/3og0IFrHkIglEOg8Ba/giphy.gif?cid=790b7611i9h0rw8pi5b83lh5ugb64gnx121q1ieyu2toyzur&ep=v1_gifs_search&rid=giphy.gif&ct=g); 
+    background-size: cover; 
+    background-position: center; 
+    background-clip: text; 
+    color: transparent;
 
     @media screen and (min-width: 480px) {
       width: 360px;  
@@ -98,8 +104,9 @@
   color: $title-color;
   background-color: $accent-color;
   text-align: center;
-  font-size: 16px;
-  font-weight: 700;
+  @extend %weight;
+  // font-size: 16px;
+  // font-weight: 700;
   cursor: pointer;
   line-height: 1.87; /* 187.5% */
   letter-spacing: 0.96px;

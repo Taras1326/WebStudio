@@ -5,6 +5,8 @@
     padding-bottom: 94px;
     text-align: center;
   display: none;
+  padding-top: 85px;
+   
     @media screen and (min-width: 1200px) {
         display: block;
     
@@ -18,11 +20,20 @@
         line-height: 1.16;
         letter-spacing: 1.08px;
        margin-bottom: 50px;
-       text-shadow: 
-       0 0 10px cyan,
-       0 0 20px cyan,
-       0 0 40px cyan,
-       0 0 80px cyan;
+    //    text-shadow: 
+    //    0 0 10px cyan,
+    //    0 0 20px cyan,
+    //    0 0 40px cyan,
+    //    0 0 80px cyan;
+
+
+       background: url(https://media.giphy.com/media/N2pnVf7TSe1DW/giphy.gif?cid=790b7611y35beygxl5mx8opq7sj289m4hwsdhuqkuhgivnyc&ep=v1_gifs_search&rid=giphy.gif&ct=g); 
+    background-size: cover; 
+    background-position: center; 
+    background-clip: text; 
+    color: transparent;
+    
+      
     }
 
     &__list {

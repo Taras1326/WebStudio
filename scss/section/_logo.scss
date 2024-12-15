@@ -16,11 +16,16 @@
     line-height: 1.18;
     letter-spacing: 0.84px;
     margin-bottom: 30px;
-    text-shadow: 
-       0 0 10px cyan,
-       0 0 20px cyan,
-       0 0 40px cyan,
-       0 0 80px cyan;
+    background: url(https://media.giphy.com/media/3ov9jR7qJvpnO5SW1W/giphy.gif?cid=ecf05e47r2uuakezjot2re6uftavt9ff4wxx0k3sc19zqr3g&ep=v1_gifs_related&rid=giphy.gif&ct=g); 
+    background-size: cover; 
+    background-position: center; 
+    background-clip: text; 
+    color: transparent;
+    // text-shadow: 
+    //    0 0 10px cyan,
+    //    0 0 20px cyan,
+    //    0 0 40px cyan,
+    //    0 0 80px cyan;
 
    @media screen and (min-width: 1200px){
     font-size: 36px;

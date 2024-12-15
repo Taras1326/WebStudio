@@ -60,10 +60,15 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: $title-color;
+    color: $accent-color;
   }
   &__Web {
     color: $accent-color;
+    background: url(http://i.giphy.com/fsULJFFGv8X3G.gif); 
+    background-size: cover; 
+    background-position: center; 
+    background-clip: text; 
+    color: transparent;
   }
 
   &__link {
