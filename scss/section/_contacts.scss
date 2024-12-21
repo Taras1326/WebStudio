@@ -1,0 +1,118 @@
+.contacts {
+    padding: 60px 0;
+    
+
+    @media screen and (min-width: 1200px) {
+        padding: 84px 0;
+        padding-bottom: 80px;
+    }
+
+    &__flex {
+        // display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
+    }
+
+    &__map {
+        width: 700px;
+        // height: 500px;
+        border-radius: 10px;
+        border: 1px solid gray;
+
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+            height: 500px;
+        }
+    }
+
+
+    &__info {
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 60px;
+            text-align: left;
+        }
+    }
+
+
+    &__title {
+        text-align: center;
+
+        color: blueviolet;
+
+        // @include font ($color:$title-color, $size:28px, $weight:700, $height:1.18, $letter-space:0.84px);
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            // @include font ($color:$title-color, $size:36px, $weight:700, $height:1.17, $letter-space:1.08px);
+        }
+    }
+
+    &__item {
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+    &__titles {
+        // margin-bottom: 10px;
+        // font-size: 20px;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        color: blueviolet;
+
+    }
+
+    &__subtitle {
+        // @include font ($color:$title-color, $size:20px, $weight:500, $height:1.2, $letter-space:0.36px);
+        margin-bottom: 10px;
+justify-content: center;
+align-items: center;
+        @media screen and (min-width: 1200px) {
+            // @include font ($color:$title-color, $size:24px, $weight:500, $height:1.19, $letter-space:0.48px);
+        }
+    }
+
+    &__link {
+    
+        justify-content: center;
+        align-items: center;
+
+        color: cyan;
+        // @include font ($weight:500, $height:1.17, $letter-space:0.24px);
+        margin-bottom: 10px;
+        display: block;
+        // @include transition();
+
+        @media screen and (min-width: 1200px) {
+            // @include font ($weight:500, $height:1.14, $letter-space:0.28px);
+        }
+
+        &:hover,
+        &:focus {
+            color: #2196f3;
+        }
+    }
+
+    &__text {
+       text-align: center;
+    }
+}

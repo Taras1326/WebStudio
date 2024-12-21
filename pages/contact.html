@@ -1,9 +1,17 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="icon" type="image/png" href="../favicones/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicones/favicon.svg" />
+    <link rel="shortcut icon" href="../favicones/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicones/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="../favicones/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,233 +25,246 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="night-theme">
+    <link rel="stylesheet" href="../style/main.min.css">
+  </head>
+  <body class="night__theme">
     <div class="cursor"></div>
-    <div class="arrow-up"> 
-      <a href="#"><img class="img-hoh" src="../imeges/keybord.png" alt="keybord"></a>
-    </div>
-    <header>
-    <header id="header" class="header night-theme">
-      <div class="container box">
-        <a href="../index.html" class="header-logo" ><span class="header-span">Web</span>Studio</a>   
-        <nav class="header-nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="../index.html" class="nav-link active lang" key="Studio">Студія</a>
+    <!-- <div class="arrow__up"> 
+      <a href="#"><img class="arrow__hoh" src="../imeges/keybord.png" alt="keybord"></a>
+    </div> -->
+    <header class="header night-theme">
+      <div class="container header__box__main element-show">
+        <a href="../index.html" class="header__logo"><span class="header__span">Web</span>Studio</a
+        >
+    
+            <button type="button" class="header__button" aria-expanded="false" aria-controls="menu-container" data-menu-button="">
+              <svg class="header__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="header__use-close" href="../imeges/symbol-defs.svg#close"></use>
+                <use class="header__use-burger" href="../imeges/symbol-defs.svg#menu-burger"></use>
+              </svg>
+            </button>
+    
+            <div class="header__menu-m" data-menu="" id="menu-container">
+              <!-- ..... ====навигация сайта ===========... -->
+              <nav class="header__site__nav">
+                <ul class="header__nav__list">
+                  <li class="header__nav__item">
+                    <a href="../index.html" class="header__nav__link  header__nav__link--current">Студия</a>
+                  </li>
+                  <li class="header__nav__item">
+                    <a href="./pages/portfolio.html" class="header__nav__link">Портфолио</a>
+                  </li>
+                  <li class="header__nav__item">
+                    <a href="" class="header__nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- ..... ====навигация сайта end======= ... -->
+    
+              <div class="header__connect">
+                <!-- .....почта+телефон.==header=.......-->
+                <ul class="header__contacts">
+                  <li class="header__contacts__item">
+                    <a href="mailto:info@devstudio.com" class="header__contacts__link">
+                      +38 096 111 11 11 
+                    </a>
+                  </li>
+                  <li class="header__contacts__item">
+                    <a href="tel:+380961111111" class="header__contacts__link__big">
+                     info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+                <!-- .....почта+телефон.==header=END...=====.......-->
+                <!-- ======social for header============ -->
+                <ul class="header__menu__list">
+                  <li class="header__menu__item">
+                    <a href="#" class="header__menu__link">Instagram</a>
+                  </li>
+                  <li class="header__menu__item">
+                    <a href="#" class="header__menu__link">Twitter</a>
+                  </li>
+                  <li class="header__menu__item">
+                    <a href="#" class="header__menu__link">Facebook</a>
+                  </li>
+                  <li class="header__menu__item">
+                    <a href="#" class="header__menu__link">LinkedIn</a>
+                  </li>
+                </ul>
+                <!-- ======social for mobile ...end...============ -->
+              </div>
+            </div>
+    
+
+        <nav class="header__nav">
+          <ul class="header__list-main">
+            <li class="header__item__main">
+              <a href="../index.html" class="header__ref">Студія</a>
             </li>
-            <li class="nav-item">
-              <a href="../pages/portfolio.html" class="nav-link lang" key="Portfolio">Портфоліо</a>
+            <li class="header__item__main">
+              <a href="../pages/portfolio.html" class="header__ref header__active">Портфоліо</a>
             </li>
-            <li class="nav-item"><a href="../pages/contact.html" class="nav-link lang" key="Contacts">Контакти</a>
+            <li class="header__item__main">
+              <a href="../pages/contact.html" class="header__css">Контакти</a>
             </li>
           </ul>
         </nav>
-      </ul>
-      <ul class="header-transitions"> 
-        <li class="header-mains-lang-eng">
-          <button id="en" class="translate">
-          <img class="header-img" src="./imeges/english.png" alt="english">
-        </button>
-        </li>
-        <li class="header-mains-lang-ukr">
-          <button id="ua" class="translate">
-          <img class="header-img" src="./imeges/ukraine.png" alt="ukraine">
-        </button>
-        </li>
-      </ul>
-        <div class="wrapper" id="night-theme-btn">
-          <input type="checkbox" name="checkbox" class="switch">
+        <div class="header__wrapper" id="night-theme-btn">
+          <input type="checkbox" name="checkbox" class="header__switch">
           </div>
-        <ul class="header-list">
-          <li class="header-item">
-
-            <a href="mailto:info@devstudio.com" class="header-link"
-              ><svg class="header-icon">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="mailto:info@devstudio.com" class="header__link"
+              ><svg class="header__icon">
                 <use href="../imeges/symbol-defs.svg#envelope"></use>
               </svg>info@devstudio.com</a
             >
-          
           </li>
-          <li class="header-item">
-            <a href="tel:+380961111111" class="header-link"
-              ><svg class="header-smartphone">
+          <li class="header__item">
+            <a href="tel:+380961111111" class="header__link"
+              ><svg class="header__smartphone">
                 <use href="../imeges/symbol-defs.svg#smartphone"></use>
               </svg>+38 096 111 11 11</a
             >
           </li>
-       
+          
+        </ul>
       </div>
     </header>
-    <div class="banner-title-area contact-us">
-        <div class="container w-container">
-            <div class="banner-content-wrap">
-                <h1 class="banner-title">Contact Us</h1>
-                <div class="breadcrumb-wrap">
-                    <a href="/" class="breadcrumb-link">Home</a>
-                    <div class="breadcrumb-separator">/</div>
-                    <div>Contact Us</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="contact-page-form">
-        <div class="container w-container">
-            <div class="contact-page-wrap">
-                <h2 class="section-title text-center">
-                    Reach Us to know the way to <br/>create your Dream Interior
-                </h2>
-                <div class="w-layout-grid contact-page-grid">
-                    <div class="contact-detail-wrap">
-                        <div class="contact-detail-item">
-                            <div class="contact-icon-wrap">
-                                <img src="https://cdn.prod.website-files.com/65bb1bd8cf9330922c3d8aca/65bb1bd8cf9330922c3d8b2f_contact-icon-one.svg" loading="lazy" alt="Contact Icon"/>
-                            </div>
-                            <a href="mailto:info@yourdomain.com" class="contact-link">info@yourdomain.com</a>
-                        </div>
-                        <div class="contact-detail-item">
-                            <div class="contact-icon-wrap">
-                                <img src="https://cdn.prod.website-files.com/65bb1bd8cf9330922c3d8aca/65bb1bd8cf9330922c3d8b2e_contact-icon-two.svg" loading="lazy" alt="Contact Icon"/>
-                            </div>
-                            <a href="tel:+1(378)400-1234" class="contact-link">+1 (378) 400-1234</a>
-                        </div>
-                        <div class="contact-detail-item">
-                            <div class="contact-icon-wrap">
-                                <img src="https://cdn.prod.website-files.com/65bb1bd8cf9330922c3d8aca/65bb1bd8cf9330922c3d8b30_contact-icon-three.svg" loading="lazy" alt="Contact Icon"/>
-                            </div>
-                            <a href="http://www.interno.com" class="contact-link">www.interno.com</a>
-                        </div>
-                        <div class="contact-social-wrap">
-                            <a href="https://www.facebook.com/" target="_blank" class="contact-social-link w-inline-block">
-                                <img src="https://cdn.prod.website-files.com/65bb1bd8cf9330922c3d8aca/65bb1bd8cf9330922c3d8afc_facebook-icon.svg" loading="lazy" alt="Social Icon"/>
-                            </a>
-                            <a href="https://x.com/" target="_blank" class="contact-social-link w-inline-block">
-                                <img src="https://cdn.prod.website-files.com/65bb1bd8cf9330922c3d8aca/6666deb4e46ad1586b254ae4_twitter-icon.svg" loading="lazy" alt="Social Icon"/>
-                            </a>
-                            <a href="https://www.linkedin.com" target="_blank" class="contact-social-link w-inline-block">
-                                <img src="https://cdn.prod.website-files.com/65bb1bd8cf9330922c3d8aca/65bb1bd8cf9330922c3d8afd_linkedin-icon.svg" loading="lazy" alt="Social Icon"/>
-                            </a>
-                            <a href="https://www.instagram.com" target="_blank" class="contact-social-link w-inline-block">
-                                <img src="https://cdn.prod.website-files.com/65bb1bd8cf9330922c3d8aca/65bb1bd8cf9330922c3d8afe_instagram-icon.svg" loading="lazy" alt="Social Icon"/>
-                            </a>
-                        </div>
+    
+
+            <main class="mainy">
+              <section class="contacts">
+                <div class="container">
+                  <div class="contacts__flex">
+                    <div class="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.779267829435!2d30.535810875246252!3d50.426584089083626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C70YzQstCw0YAg0JvQtdGB0ZYg0KPQutGA0LDRl9C90LrQuCwgMjYsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1730820969132!5m2!1suk!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contacts__map" data-aos="flip-left"></iframe>
+                  </div>
+                    <div class="contacts__info" data-aos="flip-right">
+                      <h2 class="contacts__title">Зв'язок з нами</h2>
+                      <ul class="contacts__list">
+                        <li class="contacts__item">
+                          <h3 class="contacts__subtitle">Наш офіс:</h3>
+                          <a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4270196,30.5332191,16.17z/data=!4m6!3m5!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858!16s%2Fg%2F1tctq5jv?entry=ttu" target="_blank" class="contacts__link">м. Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+                        <li class="contacts__item">
+                          <h3 class="contacts__subtitle">Наша електронна пошта:</h3>
+                          <a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com</a>
+                        </li>
+                        <li class="contacts__item">
+                          <h3 class="contacts__subtitle">Наш телефон:</h3>
+                          <a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11</a>
+                        </li>
+                      </ul>
+                      <!-- <li class="contact__item"> -->
+                      <h2 class="contacts__titles">Графік роботи:</h2>
+                      <p class="contacts__text">Ми працюємо кожен день, крім суботи та неділі з 10:00 до 19:00</p>
+                    <!-- </li> -->
+                  
                     </div>
-                    <div class="form-wrap">
-                        <div class="form-block w-form">
-                            <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get" class="form-minimum-width" data-wf-page-id="65bb1bd8cf9330922c3d8ad7" data-wf-element-id="a7f859ee-06b3-f1ba-c0e7-4023f119a34d">
-                                <div class="w-layout-grid contact-form-grid">
-                                    <div class="input-block">
-                                        <input class="form-input-field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Name" type="text" id="name-2" required=""/>
-                                    </div>
-                                    <div class="input-block">
-                                        <input class="form-input-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email" type="email" id="email-2" required=""/>
-                                    </div>
-                                    <div class="input-block">
-                                        <input class="form-input-field w-input" maxlength="256" name="Phone-Number-2" data-name="Phone Number 2" placeholder="Phone" type="tel" id="Phone-Number-2" required=""/>
-                                    </div>
-                                    <div class="input-block">
-                                        <input class="form-input-field w-input" maxlength="256" name="Subject-Field-2" data-name="Subject Field 2" placeholder="Subject" type="text" id="Subject-Field-2" required=""/>
-                                    </div>
-                                </div>
-                                <div class="form-text-area">
-                                    <textarea placeholder="Hello Iam Intrested in.." maxlength="5000" id="field" name="field" data-name="Field" class="form-input-field text-area w-input"></textarea>
-                                </div>
-                                <div class="contact-form-button-section right-align">
-                                    <input type="submit" data-wait="Please wait..." class="button-large form-button w-button" value="Submit"/>
-                                </div>
-                            </form>
-                            <div class="success-message w-form-done">
-                                <div class="success-message-title">Thank you! Your submission has been received!</div>
-                            </div>
-                            <div class="error-message w-form-fail">
-                                <div class="error-message-title">Oops! Something went wrong while submitting the form.</div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
+              </section>
+            </main>
     <footer class="footer">
-        <div class="container">
-          <div class="footer-alain" id="contacts">
-          <a href="../index.html" class="footer-link"
-            ><span class="footer-span">Web</span>Studio</a
-          >
-          
-          <address class="footer-address">
-            <a
-              href="https://www.google.com/maps/dir//%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.4265516,30.4559855,12z/data=!3m1!4b1!4m9!4m8!1m1!4e2!1m5!1m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2m2!1d30.5383858!2d50.4265807?entry=ttu"
-              target="_blank"
-              class="address-link"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </address>
-            <ul class="footer-list">
-              <li class="footer-item">
-                <a href="mailto:info@devstudio.com" class="footer-nummber"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="footer-item">
-                <a href="tel:+380961111111" class="footer-nummber"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-            </div>
-              <div class="footer-container">
-                <h5  class="footer-groste">приєднуйтесь</h5>
-                <ul class="logo-span">
-                  <a href="#" class="logo-text">
-                  <svg class="logo-box">
-                    <use href="../imeges/symbol-defs.svg#instagram-white"></use>
+      <div class="container">
+      <div>
+          <address class="footer-addresss">
+      <ul class="footer__list">
+          <li class="footer__logo">
+            <a href="../index.html" class="footer__logotype">Web<span class="footer__Web">Studio</span></a>
+          </li>
+          <li class="footer__mailro">
+            <a href="https://maps.app.goo.gl/3WHMfzr2wy2bExne6" target="_blank" class="footer__link">м. Київ, пр-т Лесі Українки, 26</a>
+          </li>
+          <li class="footer__mailtro">
+            <a href="mailto:info@devstudio.com" target="_blank" class="footer__contain">info@devstudio.com</a>
+          </li>
+          <li class="footer__mailtro">
+            <a href="tel:+380961111111" target="_blank" class="footer__contain">+38 096 111 11 11</a>
+          </li>
+      </ul>
+      </address>
+      </div>
+      <div class="footer__second">
+          <p class="footer__join">приєднуйтесь</p>
+      <ul class="footer__wrap">
+              <li class="footer__flex">
+              <a href="https://www.instagram.com/" class="footer__buttont" aria-label="Icon-only Button"> 
+                  <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      viewBox="0 0 32 32" 
+                      aria-hidden="true" 
+                      class="footer__online" 
+                      focusable="false">
+                      <use href="../imeges/symbol-defs.svg#instagram-white"></use>
                   </svg>
-                </a>
-                <a href="#" class="logo-text">
-                  <svg class="logo-box">
-                    <use href="../imeges/symbol-defs.svg#twitter-white"></use>
+              </a>
+          </li>
+          <li class="footer__flex">
+              <a href="javascript:;" class="footer__buttont" aria-label="Icon-only Button"> 
+                  <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      viewBox="0 0 32 32" 
+                      aria-hidden="true" 
+                      class="footer__online" 
+                      focusable="false">
+                      <use href="../imeges/symbol-defs.svg#twitter-white"></use>
                   </svg>
-                </a>
-                <a href="#" class="logo-text">
-                  <svg class="logo-box">
-                    <use href="../imeges/symbol-defs.svg#facebook-white"></use>
+              </a>
+          </li>
+          <li class="footer__flex">
+              <a href="javascript:;" class="footer__buttont" aria-label="Icon-only Button"> 
+                  <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      viewBox="0 0 32 32" 
+                      aria-hidden="true" 
+                      class="footer__online" 
+                      focusable="false">
+                      <use href="../imeges/symbol-defs.svg#facebook-white"></use>
                   </svg>
-                </a>
-                <a href="#" class="logo-text">
-                  <svg class="logo-box">
-                    <use href="../imeges/symbol-defs.svg#linkedin-white"></use>
+              </a>
+          </li>
+          <li class="footer__flex">
+              <a href="javascript:;" class="footer__buttont" aria-label="Icon-only Button"> 
+                  <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      viewBox="0 0 32 32" 
+                      aria-hidden="true" 
+                      class="footer__online" 
+                      focusable="false">
+                      <use href="../imeges/symbol-defs.svg#linkedin-white"></use>
                   </svg>
-                </a>
-              </ul>
+              </a>
+          </li>
+          </ul>
+          </div>
+          <div class="footer__form">
+              <p class="footer__subscribe">Підпишіться на розсилку</p>
+          <form class="footer__button">
+              <div class="footer__forms">
+              <input type="email" id="email" class="footer__input" placeholder="E-mail" required>
+              <div class="footer__flexing">
+          <button type="submit" class="footer__buttonlink">Підписатися 
+              <svg class="footer__telegram">
+                  <use href="../imeges/symbol-defs.svg#telrgram"></use>
+              </svg>
+            </button>
               </div>
-                <div class="footer-2">
-              <li class="footer-list__item">
-                <h3 class="footer-list__text">Підпишіться на розсилку</h3>
-                <form class="footer__form">
-                  <input class="form-input" type="email" id="email" placeholder="E-mail">
-                  <ul class="footer-css">
-                  <button type="submit" class="btnfooter--btn">
-                    Підписатися
-                      <svg class="footer-teleg">
-                        <use href="../imeges/symbol-defs.svg#telrgram"></use>
-                      </svg>
-                  </button>
-                </ul>
-                </form>
-              </ul>
-              </div>
-             
-        </div>
-      </footer>
-    </div>
-    <script src="../cursor.js"></script>
-      <script src="../lang.js"></script>
-      <script src="../night-theme.js"></script>
-      <script src="../scroll.js"></script>
-      <script src="../main.js"></script>
-    <script src="../sctipt.js"></script>
-</body>
-</html> -->
+          </div>
+          </form>
+      </div>
+      </div>
+  </footer>
+
+
+    <script src="../js/burger.js"></script>
+    <script src="../js/text.js"></script>
+    <script src="../js/filter.js"></script>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/lang.js"></script>
+    <script src="../js/night-theme.js"></script>
+    <script src="../js/main.js"></script>
+  <script src="../js/sctipt.js"></script>
+  </body>
+</html>

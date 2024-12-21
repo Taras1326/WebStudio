@@ -295,6 +295,11 @@
     @include flex-box ($wrap:nowrap,$direction:start,$justify:start);
     border-radius: 4px;
     background: #2196f3;
+
+
+    cursor: pointer;
+    transition: color var(--animation-time) var(--animation-time-function), background-color var(--animation-time) var(--animation-time-function), transform var(--animation-time) var(--animation-time-function); 
+
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

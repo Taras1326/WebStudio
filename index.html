@@ -19,7 +19,7 @@
 <meta name="apple-mobile-web-app-title" content="MyWebSite" />
 <link rel="manifest" href="favicons/site.webmanifest" /> -->
 
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="#">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link
@@ -41,7 +41,6 @@
     <div class="arrow__up"> 
       <a href="#"><img class="arrow__hoh" src="./imeges/keybord.png" alt="keybord"></a>
     </div>
-    <header>
     <header id="header" class="header night_theme">
       <div class="container header__box__main element-show">
         <a href="./index.html" class="header__logo" >Web<span class="header__span">Studio</span></a
@@ -109,16 +108,16 @@
         <nav class="header__nav">
           <ul class="header__list-main">
             <li class="header__item__main">
-              <a href="./index.html" class="header__ref header__active lang" key="Studio">Студія</a>
+              <a href="./index.html" class="header__ref header__active lang">Студія</a>
             </li>
             <li class="header__item__main">
-              <a href="./pages/portfolio.html" class="header__ref lang" key="Portfolio">Портфоліо</a>
+              <a href="./pages/portfolio.html" class="header__ref lang">Портфоліо</a>
             </li>
-            <li class="header__item__main"><a href="#contacts" class="header__ref lang" key="Contacts">Контакти</a>
+            <li class="header__item__main">
+              <a href="./pages/contact.html" class="header__css lang">Контакти</a>
             </li>
           </ul>
         </nav>
-      </ul>
         <div class="header__wrapper" id="night-theme-btn">
           <input type="checkbox" name="checkbox" class="header__switch">
           </div>
@@ -133,12 +132,12 @@
           
           </li>
           <li class="header__item">
-            <a href="tel:+380961111111" class="header__link"
-              ><svg class="header__smartphone">
+            <a href="tel:+380961111111" class="header__link">
+              <svg class="header__smartphone">
                 <use href="./imeges/symbol-defs.svg#smartphone"></use>
-              </svg>+38 096 111 11 11</a
-            >
+              </svg>+38 096 111 11 11</a>
           </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -212,7 +211,7 @@
             </li>
             <li class="work__item">
             <picture>
-              <source src="./imeges/desktop/work/work-designer-desktop@1x.webp 1x, ./imeges/desktop/work/work-designer-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./imeges/desktop/work/work-designer-desktop@1x.webp 1x, ./imeges/desktop/work/work-designer-desktop@2x.webp 2x" media="(min-width: 1200px)">
               <img src="./imeges/tablet.jpg" alt="tablet" class="work__image" />
             </picture>
               <div class="work__position">
@@ -531,7 +530,8 @@
               <svg class="footer__telegram">
                   <use href="./imeges/symbol-defs.svg#telrgram"></use>
               </svg>
-              </div></button>
+            </button>
+              </div>
           </div>
           </form>
       </div>
@@ -623,7 +623,7 @@
             <textarea name="text" id="text" placeholder="Введіть текст" class="form__title"></textarea>
             <label class="form__main">
               <input type="checkbox" name="checkbox" id="checkbox" class="form__check" required>
-              <p class="form__item">Погоджуюся з розсилкою та приймаю</p>
+              <span class="form__item">Погоджуюся з розсилкою та приймаю</span>
               <a href="#" class="form__wrap">Умови договору</a>
             </label>
             <div class="form__alain-button">
@@ -651,7 +651,7 @@
 
       <script src="./js/etytrhturu.js"></script>
       <script src="./js/burger.js"></script>
-      <script src="./js/modal-there is no-scrol .js"></script>
+      <script src="./js/modal-thereisno-scrol.js"></script>
       <script src="./js/text.js"></script>
       <script src="./js/cursor.js"></script>
       <script src="./js/lang.js"></script>
