@@ -626,24 +626,6 @@ body.night-theme .night-theme-btn__icon_sun {
 .header__ref:hover, .header__ref:focus {
   color: #2196f3;
 }
-.header__css {
-  font-family: "Roboto";
-  color: #2196f3;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-}
-.header__css {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  display: block;
-  margin-top: 34px;
-  opacity: 1;
-}
 .header__active {
   color: #2196f3;
 }
