@@ -7,6 +7,20 @@ body {
     // background-position: center; 
     // background-clip: text; 
     // color: transparent;
+
+
+//     transition:  background-color .4s, color .4s;
+//     background-color: white;
+//     animation: slideIn 1s ease-out;
+//     @keyframes slideIn {
+//         from {
+//           transform: translateX(-100%);
+//         }
+//         to {
+//           transform: translateX(0);
+//         }
+//       }
+    
     
 }
   
@@ -103,21 +117,7 @@ body {
     opacity: 1;
 }
 
-body {
-    transition:  background-color .4s, color .4s;
-    background-color: white;
-    animation: slideIn 1s ease-out;
-    @keyframes slideIn {
-        from {
-          transform: translateX(-100%);
-        }
-        to {
-          transform: translateX(0);
-        }
-      }
-    
-      
-}
+
 
 
 

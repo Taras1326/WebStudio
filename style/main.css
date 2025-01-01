@@ -161,20 +161,6 @@ body {
   opacity: 1;
 }
 
-body {
-  transition: background-color 0.4s, color 0.4s;
-  background-color: white;
-  animation: slideIn 1s ease-out;
-}
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
 body.night-theme {
   background-color: black;
   color: white;
@@ -847,6 +833,7 @@ body.night-theme .night-theme-btn__icon_sun {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-attachment: fixed;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/mobile/hero-mobile@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -870,6 +857,7 @@ body.night-theme .night-theme-btn__icon_sun {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    background-attachment: fixed;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/desktop/hero-desktop@1x.webp);
   }
 }

@@ -8,6 +8,7 @@
   padding-bottom: 200px;
   text-align: center;
 
+  background-attachment: fixed;
   background-image: linear-gradient(rgba(47, 48, 58, 0.40)
   ,rgba(47, 48, 58, 0.40)),
    url(../imeges/mobile/hero-mobile@1x.webp);
@@ -42,6 +43,7 @@
 
   @media screen and (min-width:1200px){
 
+    background-attachment: fixed;
     background-image: linear-gradient(rgba(47, 48, 58, 0.40)
   ,rgba(47, 48, 58, 0.40)),
    url(../imeges/desktop/hero-desktop@1x.webp);
